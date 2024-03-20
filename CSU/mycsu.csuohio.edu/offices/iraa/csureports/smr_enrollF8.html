@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/smr_enrollF8.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Data Check : Location</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Summer Semester 2016 Enrollment Analysis<br><br><div align='center'><b>Missing Locations Sorted by College / Subject </b></div></strong>
+        <div class="center">08/17/2016</div>
+<div align="center">Click on College Name to display</div><br/><a href="javascript:show('Cleveland State University')"> <div class="head1">Cleveland State University</div></a><div id="Cleveland State University" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th colspan=3>Course Name</th><th>Room Location</th><th >Meeting Pattern</th><th>Starting Time </th><th>Component</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Other</div></td></tr><tr><td>2123</td><td colspan=3>ESL 22 000</td><td>7</td><td colspan=3>Low Interm Listening/Speaking</td><td > </td><td >1</td><td>01:35 PM</td><td>LEC</td></tr>
+<tr><td colspan=13><div class="head2">Teacher Education</div></td></tr><tr><td>2123</td><td colspan=3>ESL 22 000</td><td>7</td><td colspan=3>Low Interm Listening/Speaking</td><td > </td><td >1</td><td>01:35 PM</td><td>LEC</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Education')"> <div class="head1">College of Education</div></a><div id="College of Education" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th colspan=3>Course Name</th><th>Room Location</th><th >Meeting Pattern</th><th>Starting Time </th><th>Component</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">CASAL</div></td></tr><tr><td>2057</td><td colspan=3>ALD 801 350</td><td>4</td><td colspan=3>Adult Learning Theory/Research</td><td > </td><td >1</td><td>05:00 PM</td><td>LEC</td></tr><tr><td>2468</td><td colspan=3>EDQ 504 470</td><td>1</td><td colspan=3>Ohio Edu Policy Fellowshp Prgm</td><td > </td><td >1</td><td>09:00 AM</td><td>LEC</td></tr>
+<tr><td colspan=13><div class="head2">Other Education</div></td></tr><tr><td>2852</td><td colspan=3>EDG 531 981</td><td>4</td><td colspan=3>Intro Test Dev Educators</td><td > </td><td >1</td><td>08:15 AM</td><td>LEC</td></tr>
+<tr><td colspan=13><div class="head2">Teacher Education</div></td></tr><tr><td>1111</td><td colspan=3>ESE 421 250</td><td>8</td><td colspan=3>Assess for Instructional Needs</td><td > </td><td >1</td><td>05:00 PM</td><td>LEC</td></tr><tr><td>1489</td><td colspan=3>ESE 521 250</td><td>6</td><td colspan=3>Assess for Instructional Needs</td><td > </td><td >1</td><td>05:00 PM</td><td>LEC</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Engineering')"> <div class="head1">College of Engineering</div></a><div id="College of Engineering" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th colspan=3>Course Name</th><th>Room Location</th><th >Meeting Pattern</th><th>Starting Time </th><th>Component</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Civil & Environmental Engineering</div></td></tr><tr><td>3009</td><td colspan=3>CVE 429 300</td><td>1</td><td colspan=3>Foundation Engineering</td><td > </td><td >1</td><td>02:30 PM</td><td>LEC</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Science&Hlth Prfsns')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth Prfsns" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th colspan=3>Course Name</th><th>Room Location</th><th >Meeting Pattern</th><th>Starting Time </th><th>Component</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Health Sciences</div></td></tr><tr><td>2343</td><td colspan=3>OTH 595 901</td><td>43</td><td colspan=3>OT Level II Fieldwork I</td><td > </td><td >1</td><td>08:00 AM</td><td>CLN</td></tr>
+</tbody></table></div><br/><br/><br/><em>Generated by IR</em>

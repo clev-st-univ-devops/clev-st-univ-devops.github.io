@@ -1,0 +1,63 @@
+
+/* ****************** STYLES USED ON AJAX MENUS ONLY *********************** */
+#scroll_items, #first, #second, #third, #fourth { 
+	width: 235px;
+	margin:0;
+	padding:0; 
+}
+#first, #second { width: 233px; }
+#third, #fourth { width: 225px; margin:0 5px; }
+
+dt {
+	font-family: verdana;
+	height:22px;
+	margin-top:1px;
+	font-size:11px;
+	color:#FFF;
+	font-weight: bold;
+	background: url(../../graphics/home/btn_closed.gif) no-repeat top left;
+	cursor:pointer;
+}
+
+#first dt, #second dt { background-image: url(../../graphics/mycsu/btn_closed1.gif); }
+#third dt {	background-image: url(../../graphics/mycsu/btn_closed3.gif); }
+#fourth dt { background-image: url(../../graphics/mycsu/btn_closed4.gif); }
+dt .title { padding:3px 0 0 10px; vertical-align:middle; display:block;}
+dd { 
+	margin:0;
+	padding:0;
+	background: url(../../graphics/home/dd_bg.gif) no-repeat top; 
+	width:235px;
+	height:177px;
+	color:#000;
+}
+#first dd, #second dd { 
+	width: 233px;
+	height: 200px;
+	background-image: url(../../graphics/mycsu/dd_bg1.gif);
+} 
+#third dd { 
+	width: 225px;
+	height: 360px;
+	background-image: url(../../graphics/mycsu/dd_bg3.gif);
+	-moz-border-radius:0 0 4px 4px;
+	-webkit-border-radius:0 0 4px 4px;
+	border-radius:0 0 4px 4px;
+} 
+#fourth dd { 
+	width: 225px;
+	height: 173px;
+	background-image: url(../../graphics/mycsu/dd_bg4.gif);
+} 
+dd .scroll_content { overflow:auto; padding:10px 5px 10px 10px; height: 155px; }
+#first dd .scroll_content, 
+#second dd .scroll_content {height: 178px;} 
+#third dd .scroll_content {height: 151px;}
+#fourth dd .scroll_content {height: 151px;}
+#scroll_items dt.scroll_itemsActive { background-image: url(../../graphics/home/btn_open.gif);cursor:default; }
+#first dt.firstActive, #second dt.secondActive { background-image: url(../../graphics/mycsu/btn_open1.gif);cursor:default; }
+#third dt.thirdActive { background-image: url(../../graphics/mycsu/btn_open3.gif);cursor:default; }
+#fourth dt.fourthActive { background-image: url(../../graphics/mycsu/btn_open4.gif);cursor:default; }
+
+* html dt .title{ position:relative; top:3px; }
+

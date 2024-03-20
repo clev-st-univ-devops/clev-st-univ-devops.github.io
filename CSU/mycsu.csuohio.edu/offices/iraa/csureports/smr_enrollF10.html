@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/smr_enrollF10.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Data Check : Components</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Summer Semester 2016 Enrollment Analysis<br><br><div align='center'><b>Component VS. Start Time Sorted by College / Subject </b></div></strong>
+        <div class="center">08/17/2016</div>
+<div align="center">Click on College Name to display</div><br/><a href="javascript:show('Cleveland State University')"> <div class="head1">Cleveland State University</div></a><div id="Cleveland State University" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">Other</div></td></tr><tr><td colspan=3>SAB 13 901</td><td colspan=3>Study Abroad - Italy</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >3</td><td>9    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 8 901</td><td colspan=3>Study Abroad - China</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 34 901</td><td colspan=3>Study Abroad - Czech Republic</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 46 901</td><td colspan=3>Study Abroad - Ghana</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 49 901</td><td colspan=3>Study Abroad- New Zealand</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 23 901</td><td colspan=3>Study Abroad - Australia</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 5 901</td><td colspan=3>Study Abroad - Spain</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 27 901</td><td colspan=3>Study Abroad - Costa Rica</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 69 901</td><td colspan=3>Study Abroad- Portugal</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 18 901</td><td colspan=3>Study Abroad - Ireland</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 17 901</td><td colspan=3>Study Abroad - Israel</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 32 901</td><td colspan=3>Study Abroad - South Korea</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>5    </td><td>05/21/2016</td></tr><tr><td colspan=3>SAB 1 901</td><td colspan=3>Study Abroad - France</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>6    </td><td>06/25/2016</td></tr><tr><td colspan=3>SAB 34 902</td><td colspan=3>Study Abroad - Czech Republic</td><td colspan=3>Julie Good</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>5    </td><td>06/16/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Business')"> <div class="head1">College of Business</div></a><div id="College of Business" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">Accounting</div></td></tr><tr><td colspan=3>ACT 488 501</td><td colspan=3>Advanced ACT Info Systems</td><td colspan=3>Laura Rickett</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >7</td><td>21   </td><td>07/02/2016</td></tr><tr><td colspan=3>ACT 588 501</td><td colspan=3>Advanced ACT Info Systems</td><td colspan=3>Laura Rickett</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >6</td><td>18   </td><td>07/02/2016</td></tr>
+<tr><td colspan=16><div class="head2">Computer & Information Science</div></td></tr><tr><td colspan=3>IST 899 001</td><td colspan=3>Dissertation</td><td colspan=3>Raymond Henry</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >3</td><td>6    </td><td>05/21/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Education')"> <div class="head1">College of Education</div></a><div id="College of Education" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">CASAL</div></td></tr><tr><td colspan=3>EDQ 508 980</td><td colspan=3>Leadership Institute</td><td colspan=3>Deborah Morin</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >2</td><td>8    </td><td>01/29/2016</td></tr>
+<tr><td colspan=16><div class="head2">Teacher Education</div></td></tr><tr><td colspan=3>ESE 410 501</td><td colspan=3>Assess/Eval for Mod/Severe Dis</td><td colspan=3>Kathleen Wojciak</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>07/02/2016</td></tr><tr><td colspan=3>ESE 510 501</td><td colspan=3>Assess/Eval for Mod/Severe Dis</td><td colspan=3>Kathleen Wojciak</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >4</td><td>12   </td><td>07/02/2016</td></tr><tr><td colspan=3>EST 691 300</td><td colspan=3>Comprehensive Examination</td><td colspan=3>Tachelle Banks</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >4</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>EDT 556 980</td><td colspan=3>Diff Instrct Campus Intl Schl</td><td colspan=3>Mary Gove</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>2    </td><td>05/21/2016</td></tr><tr><td colspan=3>EDT 566 980</td><td colspan=3>Mathematics Institute 4-5</td><td colspan=3>Tachelle Banks</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >6</td><td>6    </td><td>07/11/2016</td></tr><tr><td colspan=3>EDT 567 980</td><td colspan=3>Mathematics Institute 6-8</td><td colspan=3>Tachelle Banks</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >5</td><td>5    </td><td>07/14/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Engineering')"> <div class="head1">College of Engineering</div></a><div id="College of Engineering" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">Electrical Engineering and Computer Science</div></td></tr><tr><td colspan=3>EEC 602 001</td><td colspan=3>Electrical Engr Internship</td><td colspan=3>Lili Dong</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>1    </td><td>05/21/2016</td></tr><tr><td colspan=3>EEC 602 002</td><td colspan=3>Electrical Engr Internship</td><td colspan=3>Allen Morinec</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>1    </td><td>05/21/2016</td></tr><tr><td colspan=3>EEC 602 003</td><td colspan=3>Electrical Engr Internship</td><td colspan=3>Chansu Yu</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >2</td><td>2    </td><td>05/21/2016</td></tr><tr><td colspan=3>EEC 602 004</td><td colspan=3>Electrical Engr Internship</td><td colspan=3>Yongjian Fu</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >3</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>EEC 602 005</td><td colspan=3>Electrical Engr Internship</td><td colspan=3>Wenbing Zhao</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>1    </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Mechanical Engineering</div></td></tr><tr><td colspan=3>MCE 602 001</td><td colspan=3>Mechanical Engr Internship</td><td colspan=3>Mounir Ibrahim</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>1    </td><td>05/21/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Law')"> <div class="head1">College of Law</div></a><div id="College of Law" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">Law</div></td></tr><tr><td colspan=3>LAW 732 490</td><td colspan=3>Corporate Compliance & Ethics</td><td colspan=3>Browne Lewis</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >14</td><td>28   </td><td>05/23/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Lib Arts&Social Sci')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social Sci" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">English</div></td></tr><tr><td colspan=3>ENG 105 200</td><td colspan=3>Writing Center I</td><td colspan=3>Mary McDonald</td><td>LAB</td><td >TBA</td><td>RT 0124D</td><td> </td><td >1</td><td>2    </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">History</div></td></tr><tr><td colspan=3>HIS 693 501</td><td colspan=3>Sem Specl Topics</td><td colspan=3>Thomas Humphrey</td><td>SEM</td><td >TBA</td><td> </td><td> </td><td >4</td><td>12   </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Modern Languages</div></td></tr><tr><td colspan=3>SPN 494 100</td><td colspan=3>Spanish Capstone</td><td colspan=3>Antonio Medina-Rivera</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >4</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>SPN 392 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 392 982</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>CSU Staff</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 392 983</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 392 984</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >2</td><td>6    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 492 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >8</td><td>24   </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 492 982</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >7</td><td>21   </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 492 983</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >3</td><td>9    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 392 985</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 593 100</td><td colspan=3>Special Topics in Spanish</td><td colspan=3>Antonio Medina-Rivera</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>SPN 592 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>SPN 592 981</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Matias Martinez-Abeijon</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>3    </td><td>06/29/2016</td></tr><tr><td colspan=3>FRN 340 980</td><td colspan=3>Field Study</td><td colspan=3>Tama Engelking</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >4</td><td>12   </td><td>05/16/2016</td></tr><tr><td colspan=3>FRN 292 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Tama Engelking</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>2    </td><td>05/29/2016</td></tr><tr><td colspan=3>FRN 392 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Tama Engelking</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >4</td><td>8    </td><td>05/29/2016</td></tr><tr><td colspan=3>FRN 492 980</td><td colspan=3>Special Topics: Study Abroad</td><td colspan=3>Tama Engelking</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >2</td><td>4    </td><td>05/29/2016</td></tr>
+<tr><td colspan=16><div class="head2">Social Work</div></td></tr><tr><td colspan=3>SWK 694 502</td><td colspan=3>Theories&Proc in Addictin Stud</td><td colspan=3>Patricia Stoddard Dare</td><td>SEM</td><td >TBA</td><td> </td><td> </td><td >21</td><td>63   </td><td>05/21/2016</td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Science&Hlth Prfsns')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth Prfsns" style="display:none;"><table align="center" id="data" style="width:75%;" class="data nosort">
+<thead><tr><th colspan=3>Course</th><th colspan=3>Course Name</th><th colspan=3 >Instructor</th>
+<th>Component</th><th>Starting Time </th><th>Facility ID </th><th>Class Pattern  </th><th>Total Enrl </th><th>Total SCH </th><th>Start Date</th></tr></thead><tbody>
+<tr><td colspan=16><div class="head2">Biology, Geology & Environmental Science</div></td></tr><tr><td colspan=3>EVS 206 980</td><td colspan=3>Intro to Environmental Science</td><td colspan=3>Samantha Tuckerman</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >10</td><td>30   </td><td>06/14/2016</td></tr><tr><td colspan=3>BIO 491 001</td><td colspan=3>Honors Research</td><td colspan=3>Bibo Li</td><td>LAB</td><td >TBA</td><td> </td><td> </td><td >1</td><td>1    </td><td>05/21/2016</td></tr><tr><td colspan=3>BIO 451 001</td><td colspan=3>Field Exp in Eco & Conservatio</td><td colspan=3>Bernard Walton</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>BIO 491 002</td><td colspan=3>Honors Research</td><td colspan=3>Bibo Li</td><td>LAB</td><td >TBA</td><td> </td><td> </td><td >1</td><td>1    </td><td>05/21/2016</td></tr><tr><td colspan=3>BIO 691 100</td><td colspan=3>Laboratory Research</td><td colspan=3>Girish Shukla</td><td>LAB</td><td >TBA</td><td> </td><td> </td><td >4</td><td>36   </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Chemistry</div></td></tr><tr><td colspan=3>CHM 489H 002</td><td colspan=3>H: Senior Research</td><td colspan=3>David Ball</td><td>LAB</td><td >TBA</td><td> </td><td> </td><td >1</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>CHM 489H 001</td><td colspan=3>H: Senior Research</td><td colspan=3>David Anderson</td><td>LAB</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>1    </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Health Sciences</div></td></tr><tr><td colspan=3>MPH 604 501</td><td colspan=3>Biostatistics & Public Health</td><td colspan=3>Donald Allensworth-Davies</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >2</td><td>6    </td><td>05/21/2016</td></tr><tr><td colspan=3>MPH 685 001</td><td colspan=3>Capstone I</td><td colspan=3>Donald Allensworth-Davies</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>MPH 686 001</td><td colspan=3>Capstone Project II</td><td colspan=3>Donald Allensworth-Davies</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>MPH 695 001</td><td colspan=3>Special Topics in Pub Health</td><td colspan=3>Donald Allensworth-Davies</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr><tr><td colspan=3>MPH 695 002</td><td colspan=3>Special Topics in Pub Health</td><td colspan=3>Donald Allensworth-Davies</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>3    </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Mathematics</div></td></tr><tr><td colspan=3>MTH 697 100</td><td colspan=3>Readings in Mathematics</td><td colspan=3>Sailai Shao</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >1</td><td>4    </td><td>05/21/2016</td></tr><tr><td colspan=3>MTH 697 101</td><td colspan=3>Readings in Mathematics</td><td colspan=3>Sailai Shao</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>4    </td><td>05/21/2016</td></tr>
+<tr><td colspan=16><div class="head2">Physics</div></td></tr><tr><td colspan=3>PHY 593 300</td><td colspan=3>Special Topics in Physics</td><td colspan=3>Ulrich Zurcher</td><td>LEC</td><td >TBA</td><td> </td><td>TBA</td><td >1</td><td>2    </td><td>07/02/2016</td></tr>
+<tr><td colspan=16><div class="head2">Psychology</div></td></tr><tr><td colspan=3>PSY 552 980</td><td colspan=3>Assess Measure Eval Diversity</td><td colspan=3>Paul Putman</td><td>SEM</td><td >TBA</td><td>EDUSERVCTR</td><td> </td><td >7</td><td>14   </td><td>05/05/2016</td></tr><tr><td colspan=3>PSY 540 980</td><td colspan=3>Div Mngmt Mid-Prog Assessment</td><td colspan=3>Lisa Gaynier</td><td>LEC</td><td >TBA</td><td>EDUSERVCTR</td><td> </td><td >7</td><td>0    </td><td>05/05/2016</td></tr><tr><td colspan=3>PSY 553 980</td><td colspan=3>Facilitation Diversity Issues</td><td colspan=3>Linda Koenig</td><td>LEC</td><td >TBA</td><td>EDUSERVCTR</td><td> </td><td >7</td><td>14   </td><td>05/05/2016</td></tr><tr><td colspan=3>PSY 694 200</td><td colspan=3>Directed Observtn in Schools</td><td colspan=3>Colleen McMahon</td><td>LEC</td><td >TBA</td><td> </td><td> </td><td >10</td><td>20   </td><td>05/21/2016</td></tr>
+</tbody></table></div><br/><br/><br/><em>Generated by IR</em>

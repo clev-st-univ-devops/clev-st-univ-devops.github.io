@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/enrollWC.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>West,East Center and Other Off Campus Enrollment Analysis</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Spring Semester 2016 Sorted by College / Subject </strong>
+        <div class="center">05/18/2016</div>
+<div align="center">Click on College Name to display</div><div class="head3">CSU West Center Extension</div>
+ <table align="center" id="data" style="width:30%;" class="data tablesorter">
+
+ <thead>
+<tr>
+    <th colspan="5">College&nbsp;</th>
+    <th colspan="1">Credit Hours</th>
+    <th colspan="1"> Head Count</th></tr></thead>
+ <tbody>
+<tr><td colspan=5 >College of Business&nbsp;</td><td colspan=1 align=center >134&nbsp;</td><td colspan=1 align=center >47&nbsp;</td></tr>
+<tr><td colspan=5 >College of Education&nbsp;</td><td colspan=1 align=center >57&nbsp;</td><td colspan=1 align=center >19&nbsp;</td></tr>
+<tr><td colspan=5 >College of Law&nbsp;</td><td colspan=1 align=center >45&nbsp;</td><td colspan=1 align=center >16&nbsp;</td></tr>
+<tfoot><tr><td colspan=5>Total &nbsp;</td><td colspan=1> &nbsp; &nbsp; &nbsp;236 </td><td colspan=1> &nbsp; &nbsp; &nbsp; 82</td></tr></tfoot> </tbody>
+ </table>
+ <br/><a href="javascript:show('College of BusinessWEST')"> <div class="head1">College of Business</div></a><div id="College of BusinessWEST" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Business Administration</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >1556&nbsp;</td><td colspan=3 >MBA 600 981&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >11&nbsp;</td><td colspan=1 align=center >11   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Team Dynamics&nbsp;</td><td colspan=3 >David Vegh&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6526&nbsp;</td><td colspan=3 >MBA 693 980&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Special Topics Seminar&nbsp;</td><td colspan=3 >Amy Gress&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Management & Labor Relations</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6055&nbsp;</td><td colspan=3 >MGT 601 983&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >12   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >HR Management/Labor Relations&nbsp;</td><td colspan=3 >Gregory Lavelle&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Marketing</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >5134&nbsp;</td><td colspan=3 >MKT 601 983&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >45   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Marketing Strategy&nbsp;</td><td colspan=3 >Neleen Leslie&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Operations & Supply Chain Management</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6524&nbsp;</td><td colspan=3 >OSM 493 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >45   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Special Topics Operations Mgmt&nbsp;</td><td colspan=3 >Amy Gress&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6525&nbsp;</td><td colspan=3 >OSM 696 980&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Current Problems&nbsp;</td><td colspan=3 >Amy Gress&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Other Business</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6523&nbsp;</td><td colspan=3 >BUS 493 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Special Topics&nbsp;</td><td colspan=3 >Amy Gress&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of EducationWEST')"> <div class="head1">College of Education</div></a><div id="College of EducationWEST" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            CASAL</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >4134&nbsp;</td><td colspan=3 >ADM 613 980&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >19&nbsp;</td><td colspan=1 align=center >57   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >School Law&nbsp;</td><td colspan=3 >Ralph Mawdsley&nbsp;</td><td colspan=3 >08:00 AM - 01:30 PM&nbsp;</td><td colspan=1 align=center >SAT&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of LawWEST')"> <div class="head1">College of Law</div></a><div id="College of LawWEST" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Law</td></tr>
+ 
+<tr><td colspan=1 align=center >WEST&nbsp;</td><td colspan=1 align=center >6347&nbsp;</td><td colspan=3 >LAW 630 981&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >45   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >School Law&nbsp;</td><td colspan=3 >Ralph Mawdsley&nbsp;</td><td colspan=3 >08:00 AM - 01:30 PM&nbsp;</td><td colspan=1 align=center >SAT&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><div class="head3">CSU East Center Extension</div>
+ <table align="center" id="data" style="width:30%;" class="data tablesorter">
+
+ <thead>
+<tr>
+    <th colspan="5">College&nbsp;</th>
+    <th colspan="1">Credit Hours</th>
+    <th colspan="1"> Head Count</th></tr></thead>
+ <tbody>
+<tfoot><tr><td colspan=5>Total &nbsp;</td><td colspan=1> &nbsp; &nbsp; &nbsp;0 </td><td colspan=1> &nbsp; &nbsp; &nbsp; 0</td></tr></tfoot> </tbody>
+ </table>
+ <div class="head3">CSU Lorain Center Extension</div>
+ <table align="center" id="data" style="width:30%;" class="data tablesorter">
+
+ <thead>
+<tr>
+    <th colspan="5">College&nbsp;</th>
+    <th colspan="1">Credit Hours</th>
+    <th colspan="1"> Head Count</th></tr></thead>
+ <tbody>
+<tr><td colspan=5 >College of Education&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >2&nbsp;</td></tr>
+<tr><td colspan=5 >College of Lib Arts&Social Sci&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >2&nbsp;</td></tr>
+<tr><td colspan=5 >College of Science&Hlth Prfsns&nbsp;</td><td colspan=1 align=center >225&nbsp;</td><td colspan=1 align=center >49&nbsp;</td></tr>
+<tr><td colspan=5 >College of Urban Affairs&nbsp;</td><td colspan=1 align=center >120&nbsp;</td><td colspan=1 align=center >25&nbsp;</td></tr>
+<tfoot><tr><td colspan=5>Total &nbsp;</td><td colspan=1> &nbsp; &nbsp; &nbsp;357 </td><td colspan=1> &nbsp; &nbsp; &nbsp; 78</td></tr></tfoot> </tbody>
+ </table>
+ <br/><a href="javascript:show('College of EducationLorain')"> <div class="head1">College of Education</div></a><div id="College of EducationLorain" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Curriculum and Foundations</td></tr>
+ 
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >1973&nbsp;</td><td colspan=3 >ETE 595 750&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Seminar in Computer Uses in Ed&nbsp;</td><td colspan=3 >Ronald Abate&nbsp;</td><td colspan=3 >05:00 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Lib Arts&Social SciLorain')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social SciLorain" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Modern Languages</td></tr>
+ 
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >6169&nbsp;</td><td colspan=3 >SPN 346 701&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Latin American Society&Culture&nbsp;</td><td colspan=3 >Stephen Gingerich&nbsp;</td><td colspan=3 >01:30 PM - 02:20 PM&nbsp;</td><td colspan=1 align=center >MWF&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Science&Hlth PrfsnsLorain')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth PrfsnsLorain" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Psychology</td></tr>
+ 
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >5339&nbsp;</td><td colspan=3 >PSY 372 906&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >25&nbsp;</td><td colspan=1 align=center >75   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Memory & Cognition&nbsp;</td><td colspan=3 >Eulalio Gonzalez&nbsp;</td><td colspan=3 >01:00 PM - 02:15 PM&nbsp;</td><td colspan=1 align=center >MW&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >5459&nbsp;</td><td colspan=3 >PSY 487 956&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >90   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Brain & Cognition&nbsp;</td><td colspan=3 >David Bruner&nbsp;</td><td colspan=3 >05:30 PM - 06:45 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >5467&nbsp;</td><td colspan=3 >PSY 415 750&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >60   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Evaluating Psych. Research&nbsp;</td><td colspan=3 >Brian Woodside&nbsp;</td><td colspan=3 >04:00 PM - 05:15 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Urban AffairsLorain')"> <div class="head1">College of Urban Affairs</div></a><div id="College of Urban AffairsLorain" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Urban Studies</td></tr>
+ 
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >1756&nbsp;</td><td colspan=3 >UST 405 751&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >12&nbsp;</td><td colspan=1 align=center >36   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Methods of Research & Eval&nbsp;</td><td colspan=3 >Adriennie Hatten&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >1768&nbsp;</td><td colspan=3 >UST 433 751&nbsp;</td><td colspan=1 align=center >12&nbsp;</td><td colspan=1 align=center >12&nbsp;</td><td colspan=1 align=center >36   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Negotiation & Conflict Mgt&nbsp;</td><td colspan=3 >Daniel Joyce&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >1778&nbsp;</td><td colspan=3 >UST 453 751&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >12&nbsp;</td><td colspan=1 align=center >36   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Managing Urban Diversity&nbsp;</td><td colspan=3 >Michael Paquet&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LORAIN&nbsp;</td><td colspan=1 align=center >1795&nbsp;</td><td colspan=3 >UST 489 751&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >12   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Advanced Senior Seminar&nbsp;</td><td colspan=3 >J Tighe&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><div class="head3">CSU Lakeland Center Extension</div>
+ <table align="center" id="data" style="width:30%;" class="data tablesorter">
+
+ <thead>
+<tr>
+    <th colspan="5">College&nbsp;</th>
+    <th colspan="1">Credit Hours</th>
+    <th colspan="1"> Head Count</th></tr></thead>
+ <tbody>
+<tr><td colspan=5 >College of Business&nbsp;</td><td colspan=1 align=center >51&nbsp;</td><td colspan=1 align=center >18&nbsp;</td></tr>
+<tr><td colspan=5 >College of Lib Arts&Social Sci&nbsp;</td><td colspan=1 align=center >22&nbsp;</td><td colspan=1 align=center >10&nbsp;</td></tr>
+<tr><td colspan=5 >College of Science&Hlth Prfsns&nbsp;</td><td colspan=1 align=center >120&nbsp;</td><td colspan=1 align=center >30&nbsp;</td></tr>
+<tr><td colspan=5 >College of Urban Affairs&nbsp;</td><td colspan=1 align=center >162&nbsp;</td><td colspan=1 align=center >43&nbsp;</td></tr>
+<tfoot><tr><td colspan=5>Total &nbsp;</td><td colspan=1> &nbsp; &nbsp; &nbsp;355 </td><td colspan=1> &nbsp; &nbsp; &nbsp; 101</td></tr></tfoot> </tbody>
+ </table>
+ <br/><a href="javascript:show('College of BusinessLakeland')"> <div class="head1">College of Business</div></a><div id="College of BusinessLakeland" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Management & Labor Relations</td></tr>
+ 
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >1559&nbsp;</td><td colspan=3 >MGT 343 980&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >17&nbsp;</td><td colspan=1 align=center >51   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Employee Training&Development&nbsp;</td><td colspan=3 >David Topor&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Lib Arts&Social SciLakeland')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social SciLakeland" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Modern Languages</td></tr>
+ 
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >2615&nbsp;</td><td colspan=3 >MLA 393 950&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >22   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Sp. Tp. Culture & Civilization&nbsp;</td><td colspan=3 >Luka Zibelnik&nbsp;</td><td colspan=3 >06:00 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >MW&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Science&Hlth PrfsnsLakeland')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth PrfsnsLakeland" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Psychology</td></tr>
+ 
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >4971&nbsp;</td><td colspan=3 >PSY 368 901&nbsp;</td><td colspan=1 align=center >60&nbsp;</td><td colspan=1 align=center >22&nbsp;</td><td colspan=1 align=center >66   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Perceptual Processes&nbsp;</td><td colspan=3 >Brian Woodside&nbsp;</td><td colspan=3 >04:30 PM - 05:45 PM&nbsp;</td><td colspan=1 align=center >MW&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >5468&nbsp;</td><td colspan=3 >PSY 415 751&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >12   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Evaluating Psych. Research&nbsp;</td><td colspan=3 >Brian Woodside&nbsp;</td><td colspan=3 >04:00 PM - 05:15 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >5569&nbsp;</td><td colspan=3 >PSY 482 902&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >14&nbsp;</td><td colspan=1 align=center >42   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Biological Basis of Behavior&nbsp;</td><td colspan=3 >Brian Woodside&nbsp;</td><td colspan=3 >02:45 PM - 04:15 PM&nbsp;</td><td colspan=1 align=center >MW&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Urban AffairsLakeland')"> <div class="head1">College of Urban Affairs</div></a><div id="College of Urban AffairsLakeland" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Urban Studies</td></tr>
+ 
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >1755&nbsp;</td><td colspan=3 >UST 405 750&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >16&nbsp;</td><td colspan=1 align=center >48   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Methods of Research & Eval&nbsp;</td><td colspan=3 >Adriennie Hatten&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >1763&nbsp;</td><td colspan=3 >UST 433 750&nbsp;</td><td colspan=1 align=center >19&nbsp;</td><td colspan=1 align=center >17&nbsp;</td><td colspan=1 align=center >51   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Negotiation & Conflict Mgt&nbsp;</td><td colspan=3 >Daniel Joyce&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >1777&nbsp;</td><td colspan=3 >UST 453 750&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >12&nbsp;</td><td colspan=1 align=center >36   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Managing Urban Diversity&nbsp;</td><td colspan=3 >Michael Paquet&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >LAKELAND&nbsp;</td><td colspan=1 align=center >1780&nbsp;</td><td colspan=3 >UST 456 750&nbsp;</td><td colspan=1 align=center >11&nbsp;</td><td colspan=1 align=center >9&nbsp;</td><td colspan=1 align=center >27   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Fndmen Nonprofit Admin&Leader&nbsp;</td><td colspan=3 >Joseph Mead&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><div class="head3">CSU Other Centers </div>
+<br/><a href="javascript:show('Cleveland State UniversityOther')"> <div class="head1">Cleveland State University</div></a><div id="Cleveland State UniversityOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Other</td></tr>
+ 
+<tr><td colspan=1 align=center >JOHNCARROL&nbsp;</td><td colspan=1 align=center >4363&nbsp;</td><td colspan=3 >MSC 199 901&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leadership Skills MSC Lab&nbsp;</td><td colspan=3 >James Sanders&nbsp;</td><td colspan=3 >06:30 AM - 08:50 AM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >JOHNCARROL&nbsp;</td><td colspan=1 align=center >4364&nbsp;</td><td colspan=3 >MSC 299 901&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Intermediate Mil Sci II Lab&nbsp;</td><td colspan=3 >Frederick Carmicle&nbsp;</td><td colspan=3 >06:30 AM - 08:50 AM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >JOHNCARROL&nbsp;</td><td colspan=1 align=center >6081&nbsp;</td><td colspan=3 >MSC 302 901&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >12   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leading Small Organizations II&nbsp;</td><td colspan=3 >Travis Leonhardt&nbsp;</td><td colspan=3 >06:00 AM - 08:50 AM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >JOHNCARROL&nbsp;</td><td colspan=1 align=center >6082&nbsp;</td><td colspan=3 >MSC 399 901&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Junior Military Science Lab&nbsp;</td><td colspan=3 >Travis Leonhardt&nbsp;</td><td colspan=3 >06:30 AM - 08:50 AM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6143&nbsp;</td><td colspan=3 >AF 102 901&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Foundation of US Air Force II&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >03:10 PM - 04:00 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6145&nbsp;</td><td colspan=3 >AF 104 950&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leadership Laboratory&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >04:25 PM - 06:00 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6146&nbsp;</td><td colspan=3 >AF 202 901&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Evol of US Air & Space Pwer II&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >02:10 PM - 03:00 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6148&nbsp;</td><td colspan=3 >AF 204 950&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leadership Laboratory&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >04:25 PM - 06:00 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6149&nbsp;</td><td colspan=3 >AF 302 901&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leadership Studies II&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6150&nbsp;</td><td colspan=3 >AF 304 950&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Leadership Laboratory&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >04:25 PM - 06:00 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of BusinessOther')"> <div class="head1">College of Business</div></a><div id="College of BusinessOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Business Administration</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >1555&nbsp;</td><td colspan=3 >MBA 600 980&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >9&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Team Dynamics&nbsp;</td><td colspan=3 >David Vegh&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Management & Labor Relations</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >1583&nbsp;</td><td colspan=3 >MGT 601 980&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >13&nbsp;</td><td colspan=1 align=center >39   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >HR Management/Labor Relations&nbsp;</td><td colspan=3 >Tracy Lee&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Marketing</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >2210&nbsp;</td><td colspan=3 >MKT 601 980&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >45   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Marketing Strategy&nbsp;</td><td colspan=3 >Neleen Leslie&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Accounting</td></tr>
+ 
+<tr><td colspan=1 align=center >PROGRESSIV&nbsp;</td><td colspan=1 align=center >5113&nbsp;</td><td colspan=3 >ACT 600 982&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >9&nbsp;</td><td colspan=1 align=center >27   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Managerial Accounting&nbsp;</td><td colspan=3 >Peter Poznanski&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Business Administration</td></tr>
+ 
+<tr><td colspan=1 align=center >PROGRESSIV&nbsp;</td><td colspan=1 align=center >1557&nbsp;</td><td colspan=3 >MBA 600 982&nbsp;</td><td colspan=1 align=center >35&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >10   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Team Dynamics&nbsp;</td><td colspan=3 >David Vegh&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >PROGRESSIV&nbsp;</td><td colspan=1 align=center >4361&nbsp;</td><td colspan=3 >MBA 603 982&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >16&nbsp;</td><td colspan=1 align=center >48   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Mgmt of Innovation/Technology&nbsp;</td><td colspan=3 >Dennis Okocha&nbsp;</td><td colspan=3 >05:30 PM - 09:30 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >S&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of EducationOther')"> <div class="head1">College of Education</div></a><div id="College of EducationOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Teacher Education</td></tr>
+ 
+<tr><td colspan=1 align=center >CAM_INTSCH&nbsp;</td><td colspan=1 align=center >4042&nbsp;</td><td colspan=3 >EDL 504 050&nbsp;</td><td colspan=1 align=center >24&nbsp;</td><td colspan=1 align=center >13&nbsp;</td><td colspan=1 align=center >39   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >LiteracyDevelopDiverLitLearner&nbsp;</td><td colspan=3 >Dora Bechtel&nbsp;</td><td colspan=3 >05:00 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            CASAL</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >5572&nbsp;</td><td colspan=3 >ALD 664 980&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >7&nbsp;</td><td colspan=1 align=center >28   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Instruc Prin for Adult Learner&nbsp;</td><td colspan=3 >Wendy Green&nbsp;</td><td colspan=3 >05:30 PM - 09:20 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Curriculum and Foundations</td></tr>
+ 
+<tr><td colspan=1 align=center >CRIT_CONN&nbsp;</td><td colspan=1 align=center >6185&nbsp;</td><td colspan=3 >EDI 544 980&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Crucial Conv, Skills & Strat&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center >M-SA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CRIT_CONN&nbsp;</td><td colspan=1 align=center >6252&nbsp;</td><td colspan=3 >EDI 547 980&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Maximizing Your Potential&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center >M-SA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CRIT_CONN&nbsp;</td><td colspan=1 align=center >6305&nbsp;</td><td colspan=3 >EDI 544 981&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Crucial Conv, Skills & Strat&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center >M-SA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CRIT_CONN&nbsp;</td><td colspan=1 align=center >6312&nbsp;</td><td colspan=3 >EDI 549 981&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Teachers as Classrm Coaches&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center >M-SA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            CASAL</td></tr>
+ 
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6313&nbsp;</td><td colspan=3 >EDQ 502 902&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >9&nbsp;</td><td colspan=1 align=center >39   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Ldrshp Frst RIng Schl&nbsp;</td><td colspan=3 >Deborah Morin&nbsp;</td><td colspan=3 >08:00 AM - 04:00 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6320&nbsp;</td><td colspan=3 >CEL 603 504&nbsp;</td><td colspan=1 align=center >26&nbsp;</td><td colspan=1 align=center >24&nbsp;</td><td colspan=1 align=center >48   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Visionary Leadership&nbsp;</td><td colspan=3 >Keith Bell&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6321&nbsp;</td><td colspan=3 >CEL 600 504&nbsp;</td><td colspan=1 align=center >26&nbsp;</td><td colspan=1 align=center >24&nbsp;</td><td colspan=1 align=center >48   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Ldrship 21st Century Schools&nbsp;</td><td colspan=3 >Michael Zalar&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6322&nbsp;</td><td colspan=3 >CEL 606 504&nbsp;</td><td colspan=1 align=center >26&nbsp;</td><td colspan=1 align=center >24&nbsp;</td><td colspan=1 align=center >48   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Global Connect Thru Tech&nbsp;</td><td colspan=3 >Erin Frew&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Curriculum and Foundations</td></tr>
+ 
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >5850&nbsp;</td><td colspan=3 >EDI 542 984&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >5&nbsp;</td><td colspan=1 align=center >5    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Special Topics&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >08:30 AM - 03:30 PM&nbsp;</td><td colspan=1 align=center >WTHF&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6342&nbsp;</td><td colspan=3 >EDI 551 981&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >2    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Emerging Leaders Institute&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >09:00 AM - 03:00 PM&nbsp;</td><td colspan=1 align=center >M-F&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >6670&nbsp;</td><td colspan=3 >EDI 550 981&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >1    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Working on the Work-WOW&nbsp;</td><td colspan=3 >Sharon Brown&nbsp;</td><td colspan=3 >08:00 AM - 04:00 PM&nbsp;</td><td colspan=1 align=center >MTW&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Other Education</td></tr>
+ 
+<tr><td colspan=1 align=center >WVIZ&nbsp;</td><td colspan=1 align=center >6664&nbsp;</td><td colspan=3 >EDW 507 980&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >1    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Odd Girl Out&nbsp;</td><td colspan=3 >Tachelle Banks&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >WVIZ&nbsp;</td><td colspan=1 align=center >6690&nbsp;</td><td colspan=3 >EDW 545 980&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >1    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Tap, Click, Read&nbsp;</td><td colspan=3 >Tachelle Banks&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Lib Arts&Social SciOther')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social SciOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            English</td></tr>
+ 
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6031&nbsp;</td><td colspan=3 >ENG 553 980&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >18   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >04:50 PM - 07:05 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >KENT_STATE&nbsp;</td><td colspan=1 align=center >6067&nbsp;</td><td colspan=3 >ENG 553 985&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >01:00 PM - 04:00 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Social Work</td></tr>
+ 
+<tr><td colspan=1 align=center >UA_LAKEWD&nbsp;</td><td colspan=1 align=center >2293&nbsp;</td><td colspan=3 >SWK 604 901&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >7&nbsp;</td><td colspan=1 align=center >21   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Advanced Field Practicum  IV&nbsp;</td><td colspan=3 >Christopher Cameron&nbsp;</td><td colspan=3 >12:00 AM - 12:00 AM&nbsp;</td><td colspan=1 align=center >TBA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UA_LAKEWD&nbsp;</td><td colspan=1 align=center >2302&nbsp;</td><td colspan=3 >SWK 608 950&nbsp;</td><td colspan=1 align=center >14&nbsp;</td><td colspan=1 align=center >13&nbsp;</td><td colspan=1 align=center >39   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Adv Practice with Small Sys II&nbsp;</td><td colspan=3 >Kimberly Fuller&nbsp;</td><td colspan=3 >04:00 PM - 06:50 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UA_LAKEWD&nbsp;</td><td colspan=1 align=center >2318&nbsp;</td><td colspan=3 >SWK 665 950&nbsp;</td><td colspan=1 align=center >14&nbsp;</td><td colspan=1 align=center >5&nbsp;</td><td colspan=1 align=center >15   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Supervision/Staff Development&nbsp;</td><td colspan=3 >John Ellis&nbsp;</td><td colspan=3 >07:00 PM - 09:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UA_LAKEWD&nbsp;</td><td colspan=1 align=center >2326&nbsp;</td><td colspan=3 >SWK 675 950&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >45   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Program Evaluation&nbsp;</td><td colspan=3 >Becky Thomas&nbsp;</td><td colspan=3 >07:00 PM - 09:50 PM&nbsp;</td><td colspan=1 align=center >M&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UA_LAKEWD&nbsp;</td><td colspan=1 align=center >6474&nbsp;</td><td colspan=3 >SWK 671 951&nbsp;</td><td colspan=1 align=center >14&nbsp;</td><td colspan=1 align=center >5&nbsp;</td><td colspan=1 align=center >15   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Social Work Administration&nbsp;</td><td colspan=3 >Louis LaMarca&nbsp;</td><td colspan=3 >04:00 PM - 06:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            English</td></tr>
+ 
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >6032&nbsp;</td><td colspan=3 >ENG 553 981&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >05:20 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >6065&nbsp;</td><td colspan=3 >ENG 553 983&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >9    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >05:20 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >6431&nbsp;</td><td colspan=3 >ENG 553 986&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >05:20 PM - 07:50 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >YOUNGSTOWN&nbsp;</td><td colspan=1 align=center >6033&nbsp;</td><td colspan=3 >ENG 553 982&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >2&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Major Genre/Stud in Genre&nbsp;</td><td colspan=3 >Michael Geither&nbsp;</td><td colspan=3 >11:00 AM - 02:00 PM&nbsp;</td><td colspan=1 align=center >SAT&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('College of Science&Hlth PrfsnsOther')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth PrfsnsOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Biology, Geology & Environmental Science</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >4481&nbsp;</td><td colspan=3 >BIO 688 980&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >3&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Grad Seminar-MS&nbsp;</td><td colspan=3 >J Javier Provencio&nbsp;</td><td colspan=3 >05:00 PM - 05:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >4494&nbsp;</td><td colspan=3 >BIO 888 980&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Ph.D. Seminar&nbsp;</td><td colspan=3 >J Javier Provencio&nbsp;</td><td colspan=3 >05:00 PM - 05:50 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >4497&nbsp;</td><td colspan=3 >BIO 895 901&nbsp;</td><td colspan=1 align=center >50&nbsp;</td><td colspan=1 align=center >4&nbsp;</td><td colspan=1 align=center >31   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Ph.D. Research&nbsp;</td><td colspan=3 >Girish Shukla&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Physics</td></tr>
+ 
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >1373&nbsp;</td><td colspan=3 >PHY 535 950&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >30   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Radiation Therapy Physics&nbsp;</td><td colspan=3 >Douglas Wilkinson&nbsp;</td><td colspan=3 >04:00 PM - 05:15 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >CLEVE_CLIN&nbsp;</td><td colspan=1 align=center >5908&nbsp;</td><td colspan=3 >PHY 532 950&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >7&nbsp;</td><td colspan=1 align=center >14   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Radiation Safety&nbsp;</td><td colspan=3 >Xiang Li&nbsp;</td><td colspan=3 >05:30 PM - 07:20 PM&nbsp;</td><td colspan=1 align=center >TH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Psychology</td></tr>
+ 
+<tr><td colspan=1 align=center >CORP_EAST&nbsp;</td><td colspan=1 align=center >3184&nbsp;</td><td colspan=3 >PSY 691 901&nbsp;</td><td colspan=1 align=center >15&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >32   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Fieldwork Placement II&nbsp;</td><td colspan=3 >Linda Koenig&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1271&nbsp;</td><td colspan=3 >PSY 530 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >24   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Org Psych for Diversity Prof&nbsp;</td><td colspan=3 >Lisa Gaynier&nbsp;</td><td colspan=3 >12:00 AM - 12:00 AM&nbsp;</td><td colspan=1 align=center >TBA&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1272&nbsp;</td><td colspan=3 >PSY 532 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >16   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Diversity & Org Change&nbsp;</td><td colspan=3 >Melodie Yates&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1273&nbsp;</td><td colspan=3 >PSY 533 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >16   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Conflict Mngmt Across Diff&nbsp;</td><td colspan=3 >Linda Koenig&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1275&nbsp;</td><td colspan=3 >PSY 551 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >16   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Diagnosing Diversity in Org&nbsp;</td><td colspan=3 >Paul Putman&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1276&nbsp;</td><td colspan=3 >PSY 685 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >7&nbsp;</td><td colspan=1 align=center >7    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Comp Exam in Diversity Mngmt&nbsp;</td><td colspan=3 >Lisa Gaynier&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1277&nbsp;</td><td colspan=3 >PSY 633 980&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >24   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Prof Sem in Diversity Mngmt&nbsp;</td><td colspan=3 >Lisa Gaynier&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >EDUSERVCTR&nbsp;</td><td colspan=1 align=center >1279&nbsp;</td><td colspan=3 >PSY 685 981&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >16   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Comp Exam in Diversity Mngmt&nbsp;</td><td colspan=3 >Lisa Gaynier&nbsp;</td><td colspan=3 >12:00 AM - 12:00 AM&nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Mathematics</td></tr>
+ 
+<tr><td colspan=1 align=center >SOLONHS&nbsp;</td><td colspan=1 align=center >2999&nbsp;</td><td colspan=3 >MTH 286 920&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >30&nbsp;</td><td colspan=1 align=center >90   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Intro to Differential Equation&nbsp;</td><td colspan=3 >Daniel Daquila&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >STRONGSVLL&nbsp;</td><td colspan=1 align=center >3001&nbsp;</td><td colspan=3 >MTH 288 920&nbsp;</td><td colspan=1 align=center >0&nbsp;</td><td colspan=1 align=center >10&nbsp;</td><td colspan=1 align=center >30   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Linear Algebra&nbsp;</td><td colspan=3 >Michael Scott&nbsp;</td><td colspan=3 >TBA - &nbsp;</td><td colspan=1 align=center > &nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+   <tr class="head4"><td colspan="20" >
+            Psychology</td></tr>
+ 
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >3214&nbsp;</td><td colspan=3 >PSY 602 901&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >4    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Quan & Computer MethodS ll&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >02:15 PM - 03:55 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >3215&nbsp;</td><td colspan=3 >PSY 701 901&nbsp;</td><td colspan=1 align=center >20&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >4    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Multivariate Statistics&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >02:00 PM - 03:50 PM&nbsp;</td><td colspan=1 align=center >TTH&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_AKRON&nbsp;</td><td colspan=1 align=center >6649&nbsp;</td><td colspan=3 >PSY 721 902&nbsp;</td><td colspan=1 align=center >5&nbsp;</td><td colspan=1 align=center >1&nbsp;</td><td colspan=1 align=center >3    &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Spec Topics in Psy: Ad Dev & A&nbsp;</td><td colspan=3 >Non-CSU Staff&nbsp;</td><td colspan=3 >06:00 PM - 08:50 PM&nbsp;</td><td colspan=1 align=center >T&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div><br/><a href="javascript:show('School of NursingOther')"> <div class="head1">School of Nursing</div></a><div id="School of NursingOther" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th align="center">Location</th>
+          <th align="center">Class Num</th><th colspan="3">Course</th>
+          <th align="center">Enrl Cap</th><th align="center">Students Regd</th>
+          <th align="center">Total Hours</th><th align="center">Rm Cap</th>
+          <th align="center" colspan="3">Course Name</th>
+          <th align="center" colspan="3">Instructor Name</th>
+          <th align="center" colspan="3">Class Times</th>
+          <th align="center" colspan="1">Days</th>
+          <th align="center" colspan="1">Status</th></tr></thead>
+      <tr class="head4"><td colspan="20" >
+            Nursing</td></tr>
+ 
+<tr><td colspan=1 align=center >FAIRVIEW_H&nbsp;</td><td colspan=1 align=center >4558&nbsp;</td><td colspan=3 >NUR 382 904&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >24   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Maternal Newborn Nurs Clinical&nbsp;</td><td colspan=3 >Janet Bessas&nbsp;</td><td colspan=3 >02:30 PM - 09:00 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_HOSP&nbsp;</td><td colspan=1 align=center >4606&nbsp;</td><td colspan=3 >NUR 416 989&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >8&nbsp;</td><td colspan=1 align=center >40   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Medical Surgical Nurs III Cln&nbsp;</td><td colspan=3 >Beverly Lescar&nbsp;</td><td colspan=3 >06:30 AM - 03:00 PM&nbsp;</td><td colspan=1 align=center >WTHF&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+<tr><td colspan=1 align=center >UNIV_HOSP&nbsp;</td><td colspan=1 align=center >5938&nbsp;</td><td colspan=3 >NUR 326 912&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >6&nbsp;</td><td colspan=1 align=center >18   &nbsp;</td><td colspan=1 align=center >0    &nbsp;</td><td colspan=3 >Pediatric Nursing - Clinical&nbsp;</td><td colspan=3 >Maureen Chila&nbsp;</td><td colspan=3 >06:30 AM - 01:00 PM&nbsp;</td><td colspan=1 align=center >W&nbsp;</td><td colspan=1 align=center >A&nbsp;</td></tr>
+</table></div>

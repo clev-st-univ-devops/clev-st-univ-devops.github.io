@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF5HC.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Total Head Count to Date by Academic Level</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Fall Semester 2015 Head Count TO DATE<br/>Unofficial Summary of Headcount by College<br/>and by Academic Level</strong>
+        <div class="center">12/27/2015</div>
+<div align=center"><br/><B> (including enroll student or withdraw students)   </B></div>
+<p align=left></p>
+
+<table align="center" width="90%" id="data" class="data tablesorter">
+    <thead>
+        <tr>
+            <th>Academic Group</th>
+            <th class="{sorter: 'digit-with-comma'}">Undergraduate Enrollment</th>
+            <th class="{sorter: 'digit-with-comma'}">Last Year Undergraduate Enrollment*</th>
+            <th class="{sorter: 'percent'}">% Change</th>
+            <th class="{sorter: 'digit-with-comma'}">Graduate / Law Enrollment</th>
+            <th class="{sorter: 'digit-with-comma'}">Last Year Graduate / Law Enrollment*</th>
+            <th class="{sorter: 'percent'}">% Change</th>
+            <th class="{sorter: 'digit-with-comma'}">Total Enrollment</th>
+            <th class="{sorter: 'digit-with-comma'}">Last Year Total Enrollment*</th>
+            <th class="{sorter: 'percent'}">% Change</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>College of Business</td>
+                <td>2,081</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>939</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>3,020</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Education</td>
+                <td>822</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>1,144</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>1,966</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Engineering</td>
+                <td>1,813</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>724</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>2,536</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Grad Studies</td>
+                <td></td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>23</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>23</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Law</td>
+                <td></td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>428</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>428</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Lib Arts&amp;Social Sci</td>
+                <td>2,564</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>482</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>3,046</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Science&amp;Hlth Prfsns</td>
+                <td>2,919</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>822</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>3,741</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>College of Urban Affairs</td>
+                <td>432</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>244</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>676</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>CSU</td>
+                <td>123</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td></td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>123</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>Nondegree Undergraduate</td>
+                <td>213</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td></td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>213</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>School of Nursing</td>
+                <td>535</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>50</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>585</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    <tr>
+        <td>University Studies</td>
+                <td>1,115</td>
+                <td></td>
+                <td>0.0 %</td>
+                <td></td>
+                <td></td>
+                <td>0.0 %</td>
+                <td>1,115</td>
+                <td></td>
+                <td>0.0 %</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Grand Total For Term</td>
+            <td>12,617</td>
+            <td>0</td>
+            <td>-%</td>
+            <td>4,856</td>
+            <td>0</td>
+            <td>-%</td>
+            <td>17,258</td>
+            <td></td>
+            <td>-%</td>
+        </tr>
+    </tfoot>
+</table>
+    </div>
+    <div><strong>Note:</strong>
+        <ul>
+            <li>Weekday class starting date: Fall Semester 2015 - August 22, 2015; Fall Semester 2014 - August 23, 2014<br/>
+            &nbsp; * Today's best comparison date is 12/28/2014.Note: If the data is not available ,the data is pulled from closest available date (Date:04/04/2017). </li>
+            
+             <li>Weekday class starting date for LAW:
+            Fall Semester 2015 - August 22, 2015 Fall Semester 2014 - August 23, 2014<br/>
+        &nbsp;* Today's best comparison date for Law is 12/28/2014</li>
+            <li>The grand total for term is the unduplicated total. UGRD and GRAD totals are the sum of the enrollment of colleges.</li>
+              
+        </ul>
+        <em>Generated by IR</em>
+    </div>
+<!--REPORT_DATE='12/27/2015'-->
+<!--GENERATION_DATE='2017-04-04T09:23:51-04:00'-->
+</body>
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF5HC.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:10 GMT -->
+</html>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Total Credit Hours Generated to Date by College</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('chart/c_fall.html', 'dailycredithr', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Fall Semester 2015 Credit Hour Generation To date<br/>(Including all off campus enrollment)</strong>
+        <div class="center">12/27/2015</div>
+<br/>
+ <div class="center"><B>Unofficial Summary of Credit Hour Generation By College
+              <br/>(Including enroll students or withdrew students)  </B></div>
+<table border="0" width="90%" cellspacing="1">
+    <tr>
+        <td align="left">
+
+            </td>
+        <td align="right" valign="bottom">
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#chart_link').click(function(){
+                        return openF1();
+                    });
+                });
+                </script>
+            <a id="chart_link" href=# onClick='return openF1();'><img src="../graphics/graph03.gif" alt="Icon of a chart." width="26"/></a>
+        </td>
+    </tr>
+    <tr><td align="left"></td>
+        <td align="right" valign="bottom">
+            <a id="chart_link" href=# onClick='return openF1();'>&nbsp;chart</a>
+        </td>
+    </tr>
+</table>
+
+<table align="center" id="data" class="data tablesorter">
+    <thead>
+        <tr>
+            <th>Academic Group</th>
+            <th class="{sorter: 'digit-with-comma'}">Current <br/>Enrollment</th>
+            <th class="{sorter: 'digit-with-comma'}">Last Year <br/>Enrollment </th>
+            <th class="{sorter: 'percent'}">% Change <br/>from last Year</th>
+          </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>College of Business</td>
+        <td>25,526</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Education</td>
+        <td>15,136</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Engineering</td>
+        <td>19,498</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Law</td>
+        <td>5,282</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Lib Arts&amp;Social Sci</td>
+        <td>55,526</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Science&amp;Hlth Prfsns</td>
+        <td>57,636</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>College of Urban Affairs</td>
+        <td>9,072</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>CSU</td>
+        <td>1,195</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>School of Nursing</td>
+        <td>4,558</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    <tr>
+        <td>University Studies</td>
+        <td>1,632</td>
+        <td></td>
+        <td>-%</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Grand Total For Term</td>
+            <td>195,061</td>
+            <td>0</td>
+            <td>-%</td>
+           </tr>
+    </tfoot>
+</table>
+ 
+<br/>
+ <div class="center"><B>Unofficial Summary of Credit Hour Generation By College<br/>
+            (Including enroll Students or withdrew after Census date)</B></div>
+<table>
+ 
+  <tr>
+        <td align="left">
+           
+            </td>
+        <td align="right" valign="bottom">
+        </td>
+  </tr>
+</table>
+<table align="center" id="data" class="data tablesorter">
+    <thead>
+        <tr>
+            <th>Academic Group</th>
+            <th class="{sorter: 'digit-with-comma'}">Current <br/>Enrollment</th>
+            <th class="{sorter: 'digit-with-comma'}">Fall Semester 2014<br/>Final Census</th>
+            <th class="{sorter: 'percent'}">% Change <br/>from Census</th>
+            <th class="{sorter: 'digit-with-comma'}">FY16<br/>SCH Projected</th>
+            <th class="{sorter: 'percent'}">% Change <br/>from Projection</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>College of Business</td>
+        <td>25,526</td>
+         <td>27,030</td>
+        <td>-5.6%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Education</td>
+        <td>15,140</td>
+         <td>15,009</td>
+        <td>0.9%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Engineering</td>
+        <td>19,498</td>
+         <td>14,192</td>
+        <td>37.4%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Law</td>
+        <td>5,282</td>
+         <td>5,720</td>
+        <td>-7.6%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Lib Arts&amp;Social Sci</td>
+        <td>55,526</td>
+         <td>55,231</td>
+        <td>0.5%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Science&amp;Hlth Prfsns</td>
+        <td>57,636</td>
+         <td>54,556</td>
+        <td>5.6%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>College of Urban Affairs</td>
+        <td>9,072</td>
+         <td>8,870</td>
+        <td>2.3%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>CSU</td>
+        <td>1,191</td>
+         <td>1,295</td>
+        <td>-8.0%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>School of Nursing</td>
+        <td>4,558</td>
+         <td>4,364</td>
+        <td>4.4%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>University Studies</td>
+        <td>1,632</td>
+         <td>1,427</td>
+        <td>14.4%</td>
+        <td></td>
+        <td>%</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Grand Total For Term</td>
+            <td>195,061</td>
+                     <td>187,694</td>
+            <td>3.9%</td>
+            <td>0</td>
+            <td>-%</td>
+        </tr>
+    </tfoot>
+</table>
+    </div>
+    <div><strong>Note:</strong>
+        <ul>
+            <li>Weekday class starting date: Fall Semester 2015 - August 22, 2015; Fall Semester 2014 - August 23, 2014<br/>
+            &nbsp; * Today's best comparison date is 12/28/2014.Note: If the data is not available ,the data is pulled from closest available date (Date:04/04/2017). </li>
+            
+             <li>Weekday class starting date for LAW:
+            Fall Semester 2015 - August 22, 2015 Fall Semester 2014 - August 23, 2014<br/>
+        &nbsp;* Today's best comparison date for Law is 12/28/2014</li>
+            <li>The CSU group includes HON, ESL, MSC, AF, NSE, SAB, PA programs</li>
+            <li>FY16 Enrollment Projections are based upon the expected final enrollment for FY15 and were not developed by individual colleges.</li>
+            
+        </ul>
+        <em>Generated by IR</em>
+    </div>
+<!--REPORT_DATE='12/27/2015'-->
+<!--GENERATION_DATE='2017-04-04T09:22:41-04:00'-->
+</body>
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:09 GMT -->
+</html>

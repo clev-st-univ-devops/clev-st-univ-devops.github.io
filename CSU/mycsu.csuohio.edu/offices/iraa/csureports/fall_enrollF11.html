@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF11.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Total Credit Hours Generated to Date by Subject Code</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Fall Semester 2015 Enrollment Analysis By Subject<br>Sorted by College/ Organization </B></strong>
+        <div class="center">12/27/2015</div>
+<div align="center">Click on College Name to display</div><br/><a href="javascript:show('College of Business')"> <div class="head1">College of Business</div></a><div id="College of Business" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>ACT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;521.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,648.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>BLW</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>BUS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EBA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;280.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>FIN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;220.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;677.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>GAD</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;84.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>HCA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;33.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>IST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;109.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;322.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MBA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;456.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,307.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MGT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;253.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;760.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MKT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;203.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;613.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>OSM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;230.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;648.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ACT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,134.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,405.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>BLW</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;157.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;471.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>BUS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;891.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,667.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>FIN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;587.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,759.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>GAD</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;307.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;921.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HCA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;108.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>INB</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;61.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;183.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>IST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;712.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,203.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MGT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;867.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,599.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MKT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;721.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,163.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>OSM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;770.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,305.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;2,235.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;6,742.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;6,243.0 <b>Total SCH: </b>&nbsp;&nbsp;18,784.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;8,478.0 <b>Total SCH: </b>&nbsp;&nbsp;25,526.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Education')"> <div class="head1">College of Education</div></a><div id="College of Education" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>ADM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ALD</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;174.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;659.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CEL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;198.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;396.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CNS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;530.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,447.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ECE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;161.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDB</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;394.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,170.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;345.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDG</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDI</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;201.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;603.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDU</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;113.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;308.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EDW</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EGT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ESE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;157.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;481.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;85.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;291.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ETE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;262.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EUT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>HED</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;264.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>HPR</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;187.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PED</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;492.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>DAN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ECE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;276.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;828.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDB</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;327.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;789.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;198.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;348.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,044.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;61.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;183.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;63.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EDT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;41.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ESE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;187.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;561.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;170.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;817.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EUT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;91.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;193.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HED</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;362.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,086.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HPR</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;116.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PED</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;363.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,056.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PES</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;164.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;164.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;2,567.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;7,525.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;2,710.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;7,611.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;5,277.0 <b>Total SCH: </b>&nbsp;&nbsp;15,136.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Engineering')"> <div class="head1">College of Engineering</div></a><div id="College of Engineering" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>BME</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;325.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CHE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;95.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;282.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CIS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;527.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CVE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;162.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;452.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EEC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;918.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,409.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ESC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;99.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EVE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MCE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;271.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;943.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CHE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;488.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,019.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CIS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;547.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,796.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CVE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;336.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;884.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EEC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;628.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,721.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EET</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;366.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ESC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,655.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,147.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>GET</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;206.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;342.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MCE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,025.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,470.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MET</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;248.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;572.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MTT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;108.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;1,739.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;6,073.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;5,388.0 <b>Total SCH: </b>&nbsp;&nbsp;13,425.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;7,127.0 <b>Total SCH: </b>&nbsp;&nbsp;19,498.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Law')"> <div class="head1">College of Law</div></a><div id="College of Law" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>LAW</td>
+<td align=center>LAW</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,718.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;5,282.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated LAW HC: </b>&nbsp;&nbsp;&nbsp;1,718.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;5,282.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;1,718.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;5,282.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Lib Arts&Social Sci')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social Sci" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>ART</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>COM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;170.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>DAN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ECN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>ENG</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;136.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;395.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>HIS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;56.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MLA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MUA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;46.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MUS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;65.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;109.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PHL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;102.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>SOC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>SPN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;81.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>SWK</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;895.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,685.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ANT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,033.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,099.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ARB</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;171.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;593.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ART</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;636.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,902.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>BST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;157.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;471.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CHN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;118.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CLM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>COM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,127.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;6,374.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>DAN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;278.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ECN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;770.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,310.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ENG</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,748.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;8,492.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>FRN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;93.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;341.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>GER</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HIS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,649.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,947.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ITN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;216.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>JPN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;176.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>LAT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;102.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>LIN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;99.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MLA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;207.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MUA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;272.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;432.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MUS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,316.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,935.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PHL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;903.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,709.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;529.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,587.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>REL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;534.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,598.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SLN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;104.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SOC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,090.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;6,270.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SPN</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;368.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,356.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SWK</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;975.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,114.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>THE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;320.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;923.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>WST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;131.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;393.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;1,443.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;4,211.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;17,320.0 <b>Total SCH: </b>&nbsp;&nbsp;51,315.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;18,763.0 <b>Total SCH: </b>&nbsp;&nbsp;55,526.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Science&Hlth Prfsns')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth Prfsns" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>BIO</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;159.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;539.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>CHM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;225.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;795.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>DPT</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;784.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,339.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>EVS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>HSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;242.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;762.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MPH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;147.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>MTH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;424.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>OTH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;701.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,465.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PHY</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;176.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PSY</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;334.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,034.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>SPH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;689.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>BIO</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,822.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;8,312.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CHM</td>
+<td align=center>&nbsp;&nbsp;&nbsp;3,096.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;6,959.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>EVS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;416.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,051.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>GEO</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;317.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;663.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,566.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,208.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MTH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,535.0</td>
+<td align=center>&nbsp;&nbsp;14,468.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PHY</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,706.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,238.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>PSY</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,813.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;8,252.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SCI</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;135.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;270.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SPH</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;540.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,819.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;2,893.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;7,396.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;18,946.0 <b>Total SCH: </b>&nbsp;&nbsp;50,240.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;21,839.0 <b>Total SCH: </b>&nbsp;&nbsp;57,636.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('College of Urban Affairs')"> <div class="head1">College of Urban Affairs</div></a><div id="College of Urban Affairs" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>UST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;476.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,871.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>UST</td>
+<td align=center>&nbsp;&nbsp;&nbsp;2,316.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;7,201.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;476.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;1,871.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;2,316.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;7,201.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;2,792.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;9,072.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('CSU')"> <div class="head1">CSU</div></a><div id="CSU" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>ESL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.0</td>
+</tr>
+<tr>
+<td align=center>GRAD</td>
+<td align=center>PA</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;296.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;836.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>AF</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>ESL</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;595.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>HON</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;191.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>MSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>NSE</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>SAB</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;298.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;840.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;839.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;355.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;1,137.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;1,195.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('School of Nursing')"> <div class="head1">School of Nursing</div></a><div id="School of Nursing" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>GRAD</td>
+<td align=center>NUR</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;266.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>NUR</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,680.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;4,292.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated GRAD HC: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;266.0</td></tr>
+<tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;1,680.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;4,292.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;1,770.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;4,558.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div><br/><a href="javascript:show('University Studies')"> <div class="head1">University Studies</div></a><div id="University Studies" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort">
+<thead><tr><th>Academic Level</th><th>Subject Code</th><th>Students Regd</th><th>Total Hours</th></tr></thead><tbody><tr>
+<td align=center>UGRD</td>
+<td align=center>ASC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,348.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;1,348.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>BUS</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;152.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;152.0</td>
+</tr>
+<tr>
+<td align=center>UGRD</td>
+<td align=center>CSC</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132.0</td>
+<td align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132.0</td>
+</tr>
+<tfoot><tr>
+<td colspan=7><b>**Total Duplicated UGRD HC: </b>&nbsp;&nbsp;&nbsp;1,632.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;1,632.0</td></tr>
+<tr>
+<td colspan=7><b>** Total Duplicated : </b>&nbsp;&nbsp;&nbsp;1,632.0 <b>Total SCH: </b>&nbsp;&nbsp;&nbsp;1,632.0</td></tr></tfoot>
+<br>
+
+</tbody></table></div>

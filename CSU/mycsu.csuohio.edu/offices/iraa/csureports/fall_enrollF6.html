@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/fall_enrollF6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Data Check : Instructor</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Fall Semester 2015 Enrollment Analysis<br><br><div align='center'><b>Missing Instructors Sorted by College / Subject </b></div></strong>
+        <div class="center">12/27/2015</div>
+<div align="center">Click on College Name to display</div><br/><a href="javascript:show('College of Education')"> <div class="head1">College of Education</div></a><div id="College of Education" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th>Room Location</th><th colspan=3>Course Name</th>
+<th colspan=3>Instructor Name</th><th>Combined</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Teacher Education</div></td></tr>
+<tr><td>6166</td><td colspan=3>EDT 419 001</td><td>20</td><td> </td><td colspan=3>Field Exp Secondary Ed</td><td colspan=3></td><td></td></tr>
+<tr><td>4536</td><td colspan=3>EST 489 001</td><td>1</td><td> </td><td colspan=3>Stu Teaching Secondary Edu Eng</td><td colspan=3></td><td></td></tr>
+<tr><td>4607</td><td colspan=3>EST 487 002</td><td>12</td><td> </td><td colspan=3>Std Teaching:Mild/Mod Edu Need</td><td colspan=3></td><td></td></tr>
+<tr><td>4608</td><td colspan=3>EST 488 002</td><td>2</td><td> </td><td colspan=3>Stu Teaching:Mod/Sev Edu Needs</td><td colspan=3></td><td></td></tr>
+<tr><td>1195</td><td colspan=3>EST 370 001</td><td>23</td><td> </td><td colspan=3>Practicum:Early Childhood Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1196</td><td colspan=3>EST 371 001</td><td>22</td><td> </td><td colspan=3>Practicum:Mid Childhood Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1199</td><td colspan=3>EST 377 001</td><td>11</td><td> </td><td colspan=3>Practicum:Mild/Mod Edu Needs</td><td colspan=3></td><td></td></tr>
+<tr><td>1200</td><td colspan=3>EST 378 001</td><td>4</td><td> </td><td colspan=3>Practicum:Mod/Severe Edu Needs</td><td colspan=3></td><td></td></tr>
+<tr><td>1212</td><td colspan=3>EST 480 001</td><td>22</td><td> </td><td colspan=3>Std Teaching:Early Childhd Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1213</td><td colspan=3>EST 481 001</td><td>11</td><td> </td><td colspan=3>Stu Teaching:Mid Childhood Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1216</td><td colspan=3>EST 485 001</td><td>4</td><td> </td><td colspan=3>Stu Teaching Multiage Music</td><td colspan=3></td><td></td></tr>
+<tr><td>1218</td><td colspan=3>EST 491 001</td><td>2</td><td> </td><td colspan=3>Stu Teaching Sec Edu Soc Std</td><td colspan=3></td><td></td></tr>
+<tr><td>1220</td><td colspan=3>EST 570 001</td><td>4</td><td> </td><td colspan=3>Practicum:Early Childhood Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1223</td><td colspan=3>EST 575 001</td><td>15</td><td> </td><td colspan=3>Practicum in Speech & Hearing</td><td colspan=3></td><td></td></tr>
+<tr><td>1226</td><td colspan=3>EST 580 001</td><td>6</td><td> </td><td colspan=3>Stu Teaching:Early Childhd Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1228</td><td colspan=3>EST 583 001</td><td>2</td><td> </td><td colspan=3>Practicum:Secondary Edu Math</td><td colspan=3></td><td></td></tr>
+<tr><td>1231</td><td colspan=3>EST 586 001</td><td>2</td><td> </td><td colspan=3>Stu Tchg:Early Childhd Sp Edu</td><td colspan=3></td><td></td></tr>
+<tr><td>1232</td><td colspan=3>EST 587 001</td><td>5</td><td> </td><td colspan=3>Stu Teaching Mild/Mod Dis</td><td colspan=3></td><td></td></tr>
+<tr><td>1233</td><td colspan=3>EST 588 001</td><td>2</td><td> </td><td colspan=3>Stu Teaching Mod/Int Edu Needs</td><td colspan=3></td><td></td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Law')"> <div class="head1">College of Law</div></a><div id="College of Law" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th>Room Location</th><th colspan=3>Course Name</th>
+<th colspan=3>Instructor Name</th><th>Combined</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Law</div></td></tr>
+<tr><td>6072</td><td colspan=3>LAW 810 001</td><td>22</td><td> </td><td colspan=3>Law Review</td><td colspan=3></td><td></td></tr>
+<tr><td>6073</td><td colspan=3>LAW 811 001</td><td>1</td><td> </td><td colspan=3>Law Review Editr</td><td colspan=3></td><td></td></tr>
+<tr><td>6074</td><td colspan=3>LAW 813 001</td><td>11</td><td> </td><td colspan=3>Journal/Law&Hlth</td><td colspan=3></td><td></td></tr>
+<tr><td>6075</td><td colspan=3>LAW 814 003</td><td>1</td><td> </td><td colspan=3>Journal Editor</td><td colspan=3></td><td></td></tr>
+<tr><td>6084</td><td colspan=3>LAW 818 001</td><td>6</td><td> </td><td colspan=3>Global Business Law Review</td><td colspan=3></td><td></td></tr>
+<tr><td>6085</td><td colspan=3>LAW 821 001</td><td>1</td><td> </td><td colspan=3>Global BusLaw Rev Editor-in-Ch</td><td colspan=3></td><td></td></tr>
+<tr><td>6086</td><td colspan=3>LAW 823A 001</td><td>1</td><td> </td><td colspan=3>Frederick Douglas Moot Court</td><td colspan=3></td><td></td></tr>
+<tr><td>6109</td><td colspan=3>LAW 860C 002</td><td>1</td><td> </td><td colspan=3>Ind Legal Research</td><td colspan=3></td><td></td></tr>
+<tr><td>6119</td><td colspan=3>LAW 890A 001</td><td>2</td><td> </td><td colspan=3>Ll.M. Thesis</td><td colspan=3></td><td></td></tr>
+<tr><td>6120</td><td colspan=3>LAW 890C 003</td><td>1</td><td> </td><td colspan=3>Ll.M Thesis</td><td colspan=3></td><td></td></tr>
+</tbody></table></div><br/><a href="javascript:show('College of Lib Arts&Social Sci')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social Sci" style="display:none;"><table align="center" id="data" class="data nosort">
+<thead><tr><th>Class Num</th><th colspan=3>Course</th><th>Students Regd</th><th>Room Location</th><th colspan=3>Course Name</th>
+<th colspan=3>Instructor Name</th><th>Combined</th></tr></thead><tbody>
+<tr><td colspan=13><div class="head2">Anthropology</div></td></tr>
+<tr><td>5980</td><td colspan=3>LIN 494 001</td><td>3</td><td> </td><td colspan=3>Linguistics Capstone</td><td colspan=3></td><td></td></tr>
+<tr><td colspan=13><div class="head2">Music</div></td></tr>
+<tr><td>4668</td><td colspan=3>MUS 481 002</td><td>1</td><td> </td><td colspan=3>Senior Recital</td><td colspan=3></td><td></td></tr>
+</tbody></table></div><br/><br/><br/><em>Generated by IR</em>

@@ -1,0 +1,117 @@
+/* tables */
+
+
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 9pt;
+	width:auto;
+	text-align: left;
+
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 9pt;
+	padding: 4px;
+}
+
+
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+
+table.tablesorter tbody tr.odd:hover th[scope=row],
+table.tablesorter tbody tr.odd:hover td,
+table.tablesorter tbody tr.even:hover th[scope=row],
+table.tablesorter tbody tr.even:hover td
+{
+  background-color: yellow;
+}
+
+table.nosort {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 9pt;
+	width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+
+align:center;
+	text-align: left;
+
+}
+table.nosort thead tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 9pt;
+	padding: 4px;
+}
+
+table.nosort thead tr .header {
+	
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+
+}
+
+table.nosort thead tr td{
+text-align: left;
+font-weight: bolder;
+font-size: 10pt;
+background-color: #8dbdd8;
+padding: 4px;
+}
+
+
+table.nosort tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.nosort tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+
+
+
+table.nosort tbody tr.odd:hover th[scope=row],
+table.nosort tbody tr.odd:hover td,
+table.nosort tbody tr.even:hover th[scope=row],
+table.nosort tbody tr.even:hover td
+{
+  background-color: yellow;
+}
+table.nosort tbody tr.head4 td {
+font-family: arial;
+    text-align: left;
+    font-weight: bolder;
+font-size: 10pt;
+	background-color:#8dbdd8;
+}

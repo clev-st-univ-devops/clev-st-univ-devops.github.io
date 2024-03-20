@@ -1,0 +1,83 @@
+body {
+    background-color: #eeeeee;
+}
+td {
+    font-family: Arial, Helvetica; font-size: x-small;
+    font-weight:normal;
+    font-style: normal;
+    color: black
+}
+.GrooveBorder {
+    border: 2px ridge #dddddd
+}
+.center {
+    text-align: center;
+}
+a {} 
+a:link {text-decoration: none; color:blue;} 
+a:visited {color: green;} 
+a:hover {text-decoration: none; color: olive; }
+
+
+/**
+ * These style mimic the embedded html markup for styling
+ * which existed in the pages before my presence.
+ */
+table.data {
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+table.data {
+     border-color: #000000;
+     border-style: groove;
+}
+
+table.data tbody tr td {
+    white-space: nowrap;
+    text-align: right;
+}
+
+
+
+table.tablesorter tfoot tr td {
+    font-family: arial;
+    text-align: right;
+    font-weight: bolder;
+    font-size: small;
+    background-color: #8dbdd8;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+
+
+.head1 {
+    font-family: arial;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 11pt;
+   color: #006400;
+}
+
+.head2 {
+    font-family: arial;
+    text-align: left;
+    font-weight: bolder;
+font-size: 10pt;
+padding:0;
+    color: #000000;
+background-color: #8dbdd8;
+
+}
+
+.head3 {
+    font-family: arial;
+    text-align: center
+    font-weight: bolder;
+font-size: 20pt;
+    color: #600000;
+
+}

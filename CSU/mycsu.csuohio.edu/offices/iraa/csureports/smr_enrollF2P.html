@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../../external.html?link=http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mycsu.csuohio.edu/offices/iraa/csureports/smr_enrollF2P.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2024 04:06:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Student Headcount by Acad Plan and Level</title>
+            <base />
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="themes/blueauto/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+        function openF1(){
+            var newWin=open('', '', 'width=500,height=300,top=1,left=1,scrollbars=yes,resizable=yes');
+            newWin.focus();
+            return false;
+        }
+    function show(curritem) {
+    thisItem = document.getElementById(curritem).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+    else if (thisItem.display =="block"){
+    thisItem.display="none" }
+    }
+function shownew() {
+var items=["BUS","CLASS","EDU","EGR","SCIEN","URB","LAW","UNIV","NONDE","GST","CSU","FST"]
+for(i=0;i<items.length;i++)
+{
+    thisItem = document.getElementById(items[i]).style
+    if (thisItem.display =="none"){
+    thisItem.display="block" }
+ else if (thisItem.display =="block"){
+    thisItem.display="none" }
+
+
+}
+}
+
+
+        $(document).ready(
+            function(){
+                $.tablesorter.addParser(
+                    {
+                        id:"digit-with-comma",
+                        is:function(s,table){
+                            var c = table.config;
+                            return $.tablesorter.isDigit(s,c);
+                        },
+                        format:function(s){
+                            s = s.replace(/,/g,'').replace(/^s+/g,'').replace(/s+$/g,'');
+                            return $.tablesorter.formatFloat(s);
+                        },
+                        type:"numeric"
+                    }
+                );
+                $(".tablesorter").tablesorter({widgets: ['zebra']});
+                if($chartfile=='nowidget')
+                { }
+                else
+                {
+               	$.tablesorter.defaults.widgets = ['zebra'];
+               $(".nosort").tablesorter({ headers: { 0: { sorter: false }} });
+                }
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="center">
+        <strong>Summer Semester 2016 HeadCount Generation to date by College<br/> Sorted by Academic Level and Academic Plan(Major)<br/>(Including all off campus enrollment)</strong>
+        <div class="center">08/17/2016</div>
+<div align="center">Click on College Name to display</div><br/><a href="javascript:show('College of Business')"> <div class="head1">College of Business</div></a><div id="College of Business" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>ACCAUDIT</td><td>Financial Accounting_Audit</td><td align=right>77</td></tr>
+<tr>
+<td>AMB</td><td>Accelerated Business Adm</td><td align=right>11</td></tr>
+<tr>
+<td>AMBA-OL</td><td>Accelerated Mobile MBA</td><td align=right>10</td></tr>
+<tr>
+<td>DIS</td><td>Information Systems</td><td align=right>3</td></tr>
+<tr>
+<td>DMK</td><td>Marketing</td><td align=right>1</td></tr>
+<tr>
+<td>DMK-GB</td><td>Marketing-Global Business Sp</td><td align=right>2</td></tr>
+<tr>
+<td>DML</td><td>Management and Labor Relations</td><td align=right>1</td></tr>
+<tr>
+<td>EBA</td><td>Executive Business Admin</td><td align=right>7</td></tr>
+<tr>
+<td>GBUND</td><td>Graduate Business</td><td align=right>34</td></tr>
+<tr>
+<td>GIFS</td><td>Information Systems</td><td align=right>14</td></tr>
+<tr>
+<td>GLR</td><td>Labor Relations and Huma</td><td align=right>11</td></tr>
+<tr>
+<td>JDMBA</td><td>Master of Business Administrat</td><td align=right>8</td></tr>
+<tr>
+<td>MBA</td><td>Business Administration</td><td align=right>313</td></tr>
+<tr>
+<td>MBH</td><td>MBA-Health Care</td><td align=right>12</td></tr>
+<tr>
+<td>TAXATION</td><td>Tax Program</td><td align=right>20</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 524</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>ACT</td><td>Accounting</td><td align=right>143</td></tr>
+<tr>
+<td>ACT-HNSC</td><td>Accounting</td><td align=right>4</td></tr>
+<tr>
+<td>ACTCCC</td><td>Accounting</td><td align=right>9</td></tr>
+<tr>
+<td>ACTPB</td><td>Accounting</td><td align=right>16</td></tr>
+<tr>
+<td>BADM</td><td>General Business</td><td align=right>143</td></tr>
+<tr>
+<td>BADM-OL</td><td>General Business - Mobile</td><td align=right>19</td></tr>
+<tr>
+<td>BADM-OLCCC</td><td>General Business - Mobile</td><td align=right>1</td></tr>
+<tr>
+<td>BADMCCC</td><td>General Business</td><td align=right>5</td></tr>
+<tr>
+<td>BADMLK</td><td>General Business</td><td align=right>28</td></tr>
+<tr>
+<td>BADMPB</td><td>General Business</td><td align=right>1</td></tr>
+<tr>
+<td>BEC</td><td>Business Economics</td><td align=right>16</td></tr>
+<tr>
+<td>BUCER</td><td>Business</td><td align=right>1</td></tr>
+<tr>
+<td>FIN</td><td>Finance</td><td align=right>111</td></tr>
+<tr>
+<td>FIN-HNSC</td><td>Finance</td><td align=right>2</td></tr>
+<tr>
+<td>FINCCC</td><td>Finance</td><td align=right>5</td></tr>
+<tr>
+<td>IB</td><td>International Business</td><td align=right>22</td></tr>
+<tr>
+<td>IFS</td><td>Information Systems</td><td align=right>47</td></tr>
+<tr>
+<td>IFS-HNSC</td><td>Information Systems</td><td align=right>1</td></tr>
+<tr>
+<td>IFSCCC</td><td>Information Systems</td><td align=right>4</td></tr>
+<tr>
+<td>IFSPB</td><td>Information Systems</td><td align=right>4</td></tr>
+<tr>
+<td>MFRMGMT</td><td>Manufacturing Management</td><td align=right>3</td></tr>
+<tr>
+<td>MKT</td><td>Marketing</td><td align=right>108</td></tr>
+<tr>
+<td>MKTCCC</td><td>Marketing</td><td align=right>2</td></tr>
+<tr>
+<td>MKTPB</td><td>Marketing</td><td align=right>2</td></tr>
+<tr>
+<td>MLR</td><td>Management & Labor Relations</td><td align=right>68</td></tr>
+<tr>
+<td>MLR-HNSC</td><td>Management & Labor Relations</td><td align=right>1</td></tr>
+<tr>
+<td>MLRCCC</td><td>Management & Labor Relations</td><td align=right>1</td></tr>
+<tr>
+<td>MLRPB</td><td>Management & Labor Relations</td><td align=right>1</td></tr>
+<tr>
+<td>OMS</td><td>Operations & Supply Chain Mgmt</td><td align=right>96</td></tr>
+<tr>
+<td>OMSCCC</td><td>Operations & Supply Chain Mgmt</td><td align=right>2</td></tr>
+<tr>
+<td>OMSPB</td><td>Operations & Supply Chain Mgmt</td><td align=right>2</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 868</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Education')"> <div class="head1">College of Education</div></a><div id="College of Education" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>ALD</td><td>Adult Learning and Development</td><td align=right>46</td></tr>
+<tr>
+<td>ALD CER</td><td>Adult Learning and Development</td><td align=right>1</td></tr>
+<tr>
+<td>C&I</td><td>Curriculum and Instruction</td><td align=right>4</td></tr>
+<tr>
+<td>C&IADVAPTG</td><td>C&I-Advanced/Applied Teaching</td><td align=right>2</td></tr>
+<tr>
+<td>C&ICHINESE</td><td>C&I-Chinese Language</td><td align=right>2</td></tr>
+<tr>
+<td>C&IECE</td><td>C&I-Early Childhood Educ</td><td align=right>29</td></tr>
+<tr>
+<td>C&IECIS</td><td>C&I-Early Child Interv Spec</td><td align=right>10</td></tr>
+<tr>
+<td>C&IEDR</td><td>C&I-Education Research</td><td align=right>4</td></tr>
+<tr>
+<td>C&IELEM</td><td>C&I-Elementary</td><td align=right>1</td></tr>
+<tr>
+<td>C&IETE</td><td>C&I-Educational Technology</td><td align=right>17</td></tr>
+<tr>
+<td>C&IGIFT</td><td>C&I-Gifted&TalentedLearners</td><td align=right>16</td></tr>
+<tr>
+<td>C&ILITADU</td><td>C&I-Literacy Dev-Adult Lit</td><td align=right>1</td></tr>
+<tr>
+<td>C&ILITRDG</td><td>C&I-Literacy Dev-Reading</td><td align=right>33</td></tr>
+<tr>
+<td>C&ILTESOL</td><td>C&I-Literacy Development-TESOL</td><td align=right>15</td></tr>
+<tr>
+<td>C&IMI</td><td>C&I-Moderate / Intensive</td><td align=right>14</td></tr>
+<tr>
+<td>C&IMM</td><td>C&I-Mild / Moderate</td><td align=right>31</td></tr>
+<tr>
+<td>C&IMUSTENG</td><td>C&I-Secondary-MUST-English</td><td align=right>10</td></tr>
+<tr>
+<td>C&IMUSTML</td><td>C&I-Secondary-MUST-Modern Lang</td><td align=right>4</td></tr>
+<tr>
+<td>C&IMUSTMTH</td><td>C&I-Secondary-MUST-Math</td><td align=right>4</td></tr>
+<tr>
+<td>C&IMUSTSCI</td><td>C&I-Secondary-MUST-Science</td><td align=right>8</td></tr>
+<tr>
+<td>C&IMUSTSST</td><td>C&I-Secondary-MUST-Social Stud</td><td align=right>11</td></tr>
+<tr>
+<td>C&ISECENG</td><td>C&I-Secondary-English</td><td align=right>2</td></tr>
+<tr>
+<td>C&ISECMTH</td><td>C&I-Secondary-Math</td><td align=right>2</td></tr>
+<tr>
+<td>C&ISECSCI</td><td>C&I-Secondary-Science</td><td align=right>1</td></tr>
+<tr>
+<td>C&ISECSST</td><td>C&I-Secondary-Social Studies</td><td align=right>1</td></tr>
+<tr>
+<td>C&ISHLTH</td><td>C&I-School Health</td><td align=right>1</td></tr>
+<tr>
+<td>CAC</td><td>Clinical Mental Health Cnsling</td><td align=right>64</td></tr>
+<tr>
+<td>CHMDEP</td><td>Chemical Dependency Counc Cert</td><td align=right>2</td></tr>
+<tr>
+<td>CMH</td><td>Community Health Promotion</td><td align=right>11</td></tr>
+<tr>
+<td>CNS</td><td>Counselor Education</td><td align=right>40</td></tr>
+<tr>
+<td>CNS-LIC</td><td>School Counseling</td><td align=right>3</td></tr>
+<tr>
+<td>CT-END</td><td>Computer/Tech Endorsement</td><td align=right>3</td></tr>
+<tr>
+<td>DBDEC</td><td>Data-Based Decision Making</td><td align=right>1</td></tr>
+<tr>
+<td>EAD</td><td>Educational Administration</td><td align=right>22</td></tr>
+<tr>
+<td>ECE-LIC</td><td>Early Childhood PreK-3</td><td align=right>1</td></tr>
+<tr>
+<td>ECEND</td><td>Early Childhood Gen Endorsmt</td><td align=right>1</td></tr>
+<tr>
+<td>ECMHC</td><td>Early Childhood Mental Health</td><td align=right>1</td></tr>
+<tr>
+<td>EDUC-LIC</td><td>Graduate Education Licensure</td><td align=right>32</td></tr>
+<tr>
+<td>EXS</td><td>Exercise Science</td><td align=right>36</td></tr>
+<tr>
+<td>GAUT</td><td>Autism Spectrum Disorder/Fdtn</td><td align=right>3</td></tr>
+<tr>
+<td>GEDND</td><td>Graduate Education</td><td align=right>121</td></tr>
+<tr>
+<td>GIFT-END</td><td>Gifted Endorsement</td><td align=right>7</td></tr>
+<tr>
+<td>GSM</td><td>Sport Management</td><td align=right>12</td></tr>
+<tr>
+<td>HPE</td><td>Health Professions Education</td><td align=right>7</td></tr>
+<tr>
+<td>INSPLDR-L</td><td>Inspired Leaders Principal</td><td align=right>28</td></tr>
+<tr>
+<td>RDG-END</td><td>Reading Endorsement</td><td align=right>10</td></tr>
+<tr>
+<td>SEDECIS-L</td><td>Early Child Inter Spec PreK-3</td><td align=right>1</td></tr>
+<tr>
+<td>SEDMI-LIC</td><td>Mod/Intensive Spec K-12</td><td align=right>1</td></tr>
+<tr>
+<td>SEDMM-LIC</td><td>Mild/Mod Intervention Spc K-12</td><td align=right>3</td></tr>
+<tr>
+<td>TESOL-END</td><td>TESOL Endorsement</td><td align=right>6</td></tr>
+<tr>
+<td>TESOLC</td><td>Certificate Program in TESOL</td><td align=right>2</td></tr>
+<tr>
+<td>UEA</td><td>Urban Ed: Administration</td><td align=right>6</td></tr>
+<tr>
+<td>UEAE</td><td>Adult Continuing & Higher Educ</td><td align=right>6</td></tr>
+<tr>
+<td>UECP</td><td>Ph.D. in Urb Edu: Counsel Psy</td><td align=right>9</td></tr>
+<tr>
+<td>UEL</td><td>Urban Education: Learnin</td><td align=right>5</td></tr>
+<tr>
+<td>UELL</td><td>Urban Education: L & L-L</td><td align=right>1</td></tr>
+<tr>
+<td>UEN</td><td>Urban Education:  Nursing</td><td align=right>1</td></tr>
+<tr>
+<td>UEP</td><td>Urban Education: Policy</td><td align=right>9</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 725</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>ECE</td><td>Early Childhood Education</td><td align=right>59</td></tr>
+<tr>
+<td>ECEDCCC</td><td>Early Childhood Education</td><td align=right>4</td></tr>
+<tr>
+<td>ECPBL</td><td>Early Childhood Education PK-3</td><td align=right>1</td></tr>
+<tr>
+<td>EDMLAMT</td><td>Mid Childhood Lang Arts & Math</td><td align=right>5</td></tr>
+<tr>
+<td>EDMLASC</td><td>Mid Childhood Lang Arts & Sci</td><td align=right>1</td></tr>
+<tr>
+<td>EDMLASS</td><td>Mid Childhood Lang Arts & SSt</td><td align=right>4</td></tr>
+<tr>
+<td>EDMMTSC</td><td>Mid Childhood Math & Science</td><td align=right>5</td></tr>
+<tr>
+<td>EDMMTSS</td><td>Mid Childhood Math & Soc St</td><td align=right>6</td></tr>
+<tr>
+<td>EDMMTSSCCC</td><td>Mid Childhood Math & Soc St</td><td align=right>1</td></tr>
+<tr>
+<td>EDMSC-HNSC</td><td>Mid Childhood Math & Science</td><td align=right>1</td></tr>
+<tr>
+<td>EDMSCSS</td><td>Mid Childhood Science & SSt</td><td align=right>2</td></tr>
+<tr>
+<td>EFS</td><td>Exercise/Fitness Specialist</td><td align=right>21</td></tr>
+<tr>
+<td>IGPBLBIO</td><td>Integrated Science (BIO) 7-12</td><td align=right>3</td></tr>
+<tr>
+<td>IGPBLLA</td><td>Integrated Language Arts 7-12</td><td align=right>3</td></tr>
+<tr>
+<td>IGPBLMT</td><td>Integrated Math 7-12</td><td align=right>1</td></tr>
+<tr>
+<td>IGPBLSS</td><td>Integrated Social Studies 7-12</td><td align=right>1</td></tr>
+<tr>
+<td>MIDPBLLASS</td><td>Mid Childhood Lang Arts & SSt</td><td align=right>1</td></tr>
+<tr>
+<td>MIDPBLMTSC</td><td>Mid Childhood Math & Science</td><td align=right>3</td></tr>
+<tr>
+<td>PEDU</td><td>Pre-Education</td><td align=right>23</td></tr>
+<tr>
+<td>PEDUCCC</td><td>Pre-Education</td><td align=right>1</td></tr>
+<tr>
+<td>PEDUPB</td><td>Pre-Education</td><td align=right>5</td></tr>
+<tr>
+<td>PEHSE</td><td>Pre-Educ & Human Serv (Educ)</td><td align=right>8</td></tr>
+<tr>
+<td>PEPBL</td><td>Physical Education PK-12</td><td align=right>2</td></tr>
+<tr>
+<td>PEU</td><td>Physical Education</td><td align=right>6</td></tr>
+<tr>
+<td>SEDMI</td><td>Moderate/Intensive Educ'lNeeds</td><td align=right>12</td></tr>
+<tr>
+<td>SEDMM</td><td>Mild/Moderate Educational Need</td><td align=right>24</td></tr>
+<tr>
+<td>SEDMMCCC</td><td>Mild/Moderate Educational Need</td><td align=right>1</td></tr>
+<tr>
+<td>SPM</td><td>Sports Management</td><td align=right>17</td></tr>
+<tr>
+<td>TEACH CERT</td><td>Teacher Certification</td><td align=right>2</td></tr>
+<tr>
+<td>TESOLPBL</td><td>TESOL Endorsement K-12</td><td align=right>2</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 225</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Engineering')"> <div class="head1">College of Engineering</div></a><div id="College of Engineering" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>ABE</td><td>Applied Biomedical Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>ABME</td><td>Biomedical Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>ACHG</td><td>Chemical Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>AMCG</td><td>Mechanical Engineering</td><td align=right>3</td></tr>
+<tr>
+<td>BME</td><td>Biomedical Engineering</td><td align=right>4</td></tr>
+<tr>
+<td>CHG</td><td>Chemical Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>CVD</td><td>Civil Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>CVG</td><td>Civil Engineering</td><td align=right>6</td></tr>
+<tr>
+<td>ELD</td><td>Electrical Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>ELG</td><td>Electrical Engineering</td><td align=right>77</td></tr>
+<tr>
+<td>GCS</td><td>Computer and Information Scien</td><td align=right>33</td></tr>
+<tr>
+<td>GENND</td><td>Graduate Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>GSWE</td><td>Software Engineering</td><td align=right>12</td></tr>
+<tr>
+<td>MCD</td><td>Mechanical Engineering</td><td align=right>6</td></tr>
+<tr>
+<td>MCG</td><td>Mechanical Engineering</td><td align=right>14</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 164</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>ACVE</td><td>Civil Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>ACVEPB</td><td>Civil Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>AEE</td><td>Electrical Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>AEE-HNSC</td><td>Electrical Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>AMCE</td><td>Mechanical Engineering</td><td align=right>14</td></tr>
+<tr>
+<td>AMCE-HNSC</td><td>Mechanical Engineering</td><td align=right>4</td></tr>
+<tr>
+<td>AMCEPB</td><td>Mechanical Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>CE</td><td>Computer Engineering</td><td align=right>33</td></tr>
+<tr>
+<td>CE-HNSC</td><td>Computer Engineering</td><td align=right>3</td></tr>
+<tr>
+<td>CEPB</td><td>Computer Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>CHE</td><td>Chemical Engineering</td><td align=right>92</td></tr>
+<tr>
+<td>CHE-HNSC</td><td>Chemical Engineering</td><td align=right>5</td></tr>
+<tr>
+<td>CHEPB</td><td>Chemical Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>CIS</td><td>Computer & Information Science</td><td align=right>41</td></tr>
+<tr>
+<td>CISCCC</td><td>Computer & Information Science</td><td align=right>1</td></tr>
+<tr>
+<td>CISPB</td><td>Computer & Information Science</td><td align=right>2</td></tr>
+<tr>
+<td>CS</td><td>Computer Science</td><td align=right>1</td></tr>
+<tr>
+<td>CVE</td><td>Civil Engineering</td><td align=right>50</td></tr>
+<tr>
+<td>CVE-HNSC</td><td>Civil Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>CVECCC</td><td>Civil Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>CVEPB</td><td>Civil Engineering</td><td align=right>5</td></tr>
+<tr>
+<td>ECS</td><td>Computer Science</td><td align=right>24</td></tr>
+<tr>
+<td>ECS-HNSC</td><td>Computer Science</td><td align=right>1</td></tr>
+<tr>
+<td>ECSPB</td><td>Computer Science</td><td align=right>5</td></tr>
+<tr>
+<td>ECT</td><td>Electronic Egr Technology</td><td align=right>25</td></tr>
+<tr>
+<td>ECTCC</td><td>Electronic Egr Technology</td><td align=right>1</td></tr>
+<tr>
+<td>ECTLR</td><td>Electronic Egr Technology</td><td align=right>1</td></tr>
+<tr>
+<td>EE</td><td>Electrical Engineering</td><td align=right>58</td></tr>
+<tr>
+<td>EE-HNSC</td><td>Electrical Engineering</td><td align=right>2</td></tr>
+<tr>
+<td>EEPB</td><td>Electrical Engineering</td><td align=right>4</td></tr>
+<tr>
+<td>ENPBUND</td><td>Engineering Undecided</td><td align=right>1</td></tr>
+<tr>
+<td>MCE</td><td>Mechanical Engineering</td><td align=right>163</td></tr>
+<tr>
+<td>MCE-HNSC</td><td>Mechanical Engineering</td><td align=right>10</td></tr>
+<tr>
+<td>MCEPB</td><td>Mechanical Engineering</td><td align=right>7</td></tr>
+<tr>
+<td>MCT</td><td>Mechanical Egr Technology</td><td align=right>48</td></tr>
+<tr>
+<td>MCTCCC</td><td>Mechanical Egr Technology</td><td align=right>3</td></tr>
+<tr>
+<td>MCTLR</td><td>Mechanical Egr Technology</td><td align=right>4</td></tr>
+<tr>
+<td>PE</td><td>Pre-Engineering</td><td align=right>10</td></tr>
+<tr>
+<td>PENG</td><td>Pre-College of Engineering</td><td align=right>68</td></tr>
+<tr>
+<td>PENGCCC</td><td>Pre-College of Engineering</td><td align=right>1</td></tr>
+<tr>
+<td>PENGPB</td><td>Pre-College of Engineering</td><td align=right>9</td></tr>
+<tr>
+<td>UNDE</td><td>Engineering Undecided</td><td align=right>2</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 711</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Grad Studies')"> <div class="head1">College of Grad Studies</div></a><div id="College of Grad Studies" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>CROSS GRAD</td><td>Cross Registration Graduate</td><td align=right>2</td></tr>
+<tr>
+<td>GTRN</td><td>Grad Transient</td><td align=right>12</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 14</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Law')"> <div class="head1">College of Law</div></a><div id="College of Law" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>HLTHLW</td><td>Health Law</td><td align=right>1</td></tr>
+<tr>
+<td>LAW</td><td>Law</td><td align=right>81</td></tr>
+<tr>
+<td>LAWLLM</td><td>Master of Laws</td><td align=right>3</td></tr>
+<tr>
+<td>LAWVS</td><td>Law</td><td align=right>11</td></tr>
+<tr>
+<td>LGLS</td><td>Legal Studies</td><td align=right>6</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 102</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Lib Arts&Social Sci')"> <div class="head1">College of Lib Arts&Social Sci</div></a><div id="College of Lib Arts&Social Sci" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>AGLBINT</td><td>Global Interaction 4+1</td><td align=right>1</td></tr>
+<tr>
+<td>GCAND</td><td>Grad LibArts&SocSci Non-degree</td><td align=right>42</td></tr>
+<tr>
+<td>GCM</td><td>Communication Thry and M</td><td align=right>1</td></tr>
+<tr>
+<td>GEC</td><td>Economics</td><td align=right>10</td></tr>
+<tr>
+<td>GEG</td><td>English</td><td align=right>11</td></tr>
+<tr>
+<td>GHS</td><td>History</td><td align=right>4</td></tr>
+<tr>
+<td>GLBINT</td><td>Global Interaction</td><td align=right>7</td></tr>
+<tr>
+<td>GMU</td><td>Music</td><td align=right>1</td></tr>
+<tr>
+<td>GPL</td><td>Philosophy</td><td align=right>1</td></tr>
+<tr>
+<td>GSN</td><td>Spanish</td><td align=right>10</td></tr>
+<tr>
+<td>GSW</td><td>Social Work</td><td align=right>98</td></tr>
+<tr>
+<td>MFACW</td><td>Mstr of Fine Arts-Creative Wri</td><td align=right>1</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 187</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>AJRNPR</td><td>Journalism & Promotional Comm</td><td align=right>1</td></tr>
+<tr>
+<td>AMSTCER</td><td>American Studies Certificate</td><td align=right>1</td></tr>
+<tr>
+<td>ANT</td><td>Anthropology</td><td align=right>13</td></tr>
+<tr>
+<td>ANT-HNSC</td><td>Anthropology</td><td align=right>1</td></tr>
+<tr>
+<td>ANTPB</td><td>Anthropology</td><td align=right>1</td></tr>
+<tr>
+<td>ART</td><td>Art History</td><td align=right>5</td></tr>
+<tr>
+<td>ART DSGN</td><td>Studio Art: Graphic Design</td><td align=right>13</td></tr>
+<tr>
+<td>ART EDU</td><td>Art Education</td><td align=right>1</td></tr>
+<tr>
+<td>ART PHTO</td><td>Studio Art: Photography</td><td align=right>1</td></tr>
+<tr>
+<td>ART STUDIO</td><td>Studio Art</td><td align=right>10</td></tr>
+<tr>
+<td>ARTPB</td><td>Art History</td><td align=right>1</td></tr>
+<tr>
+<td>ARTPB STUD</td><td>Studio Art</td><td align=right>1</td></tr>
+<tr>
+<td>ARTPHOTCCC</td><td>Studio Art: Photography</td><td align=right>1</td></tr>
+<tr>
+<td>BIOECER</td><td>Bioethics Certificate</td><td align=right>1</td></tr>
+<tr>
+<td>BLST</td><td>Black Studies</td><td align=right>2</td></tr>
+<tr>
+<td>BLSTPB</td><td>Black Studies</td><td align=right>1</td></tr>
+<tr>
+<td>CAPBUND</td><td>Lib Arts & Soc Sci Undecided</td><td align=right>4</td></tr>
+<tr>
+<td>CLM</td><td>Classical and Medieval S</td><td align=right>2</td></tr>
+<tr>
+<td>COM</td><td>Communication</td><td align=right>69</td></tr>
+<tr>
+<td>COM MGT PB</td><td>Communication Management</td><td align=right>1</td></tr>
+<tr>
+<td>COM-HNSC</td><td>Communication</td><td align=right>1</td></tr>
+<tr>
+<td>COMCCC</td><td>Communication</td><td align=right>1</td></tr>
+<tr>
+<td>COMM MGT</td><td>Communication Management</td><td align=right>34</td></tr>
+<tr>
+<td>COMMGTCCC</td><td>Communication Management</td><td align=right>2</td></tr>
+<tr>
+<td>COMPB</td><td>Communication</td><td align=right>1</td></tr>
+<tr>
+<td>CRIM</td><td>Criminology</td><td align=right>74</td></tr>
+<tr>
+<td>CRIM-HNSC</td><td>Criminology</td><td align=right>1</td></tr>
+<tr>
+<td>CRIM-PB</td><td>Criminology</td><td align=right>2</td></tr>
+<tr>
+<td>CRIMCCC</td><td>Criminology</td><td align=right>1</td></tr>
+<tr>
+<td>DRA</td><td>Theatre Arts</td><td align=right>22</td></tr>
+<tr>
+<td>ECN</td><td>Economics</td><td align=right>11</td></tr>
+<tr>
+<td>ECN-HNSC</td><td>Economics</td><td align=right>1</td></tr>
+<tr>
+<td>EDI-CA</td><td>Education</td><td align=right>15</td></tr>
+<tr>
+<td>ENG</td><td>English</td><td align=right>20</td></tr>
+<tr>
+<td>ENGCCC</td><td>English</td><td align=right>1</td></tr>
+<tr>
+<td>ENGCW</td><td>English-Creative Writing Track</td><td align=right>11</td></tr>
+<tr>
+<td>ENGSL</td><td>English-Intgrted Language Arts</td><td align=right>7</td></tr>
+<tr>
+<td>FILM/DGTAL</td><td>Film, TV and Interactive Media</td><td align=right>36</td></tr>
+<tr>
+<td>FLM/DGTLPB</td><td>Film, TV and Interactive Media</td><td align=right>1</td></tr>
+<tr>
+<td>FLM/DIGCCC</td><td>Film, TV and Interactive Media</td><td align=right>2</td></tr>
+<tr>
+<td>FRN</td><td>French</td><td align=right>3</td></tr>
+<tr>
+<td>FRN-HNSC</td><td>French</td><td align=right>1</td></tr>
+<tr>
+<td>GDSN</td><td>Graphic Design</td><td align=right>1</td></tr>
+<tr>
+<td>HIS</td><td>History</td><td align=right>28</td></tr>
+<tr>
+<td>HISPB</td><td>History</td><td align=right>2</td></tr>
+<tr>
+<td>IR</td><td>International Relations</td><td align=right>16</td></tr>
+<tr>
+<td>IRPB</td><td>International Relations</td><td align=right>2</td></tr>
+<tr>
+<td>JRN/PROMOT</td><td>Journalism & Promotional Comm</td><td align=right>48</td></tr>
+<tr>
+<td>LIB</td><td>Liberal Studies</td><td align=right>10</td></tr>
+<tr>
+<td>LIBCCC</td><td>Liberal Studies</td><td align=right>1</td></tr>
+<tr>
+<td>LIN</td><td>Linguistics</td><td align=right>7</td></tr>
+<tr>
+<td>LIN-HNSC</td><td>Linguistics</td><td align=right>1</td></tr>
+<tr>
+<td>LINPB</td><td>Linguistics</td><td align=right>1</td></tr>
+<tr>
+<td>MULTIMEDIA</td><td>Multimedia Advertising</td><td align=right>1</td></tr>
+<tr>
+<td>MUPER-HNSC</td><td>Music Performance</td><td align=right>1</td></tr>
+<tr>
+<td>MUS COMP</td><td>Music Composition</td><td align=right>2</td></tr>
+<tr>
+<td>MUS EDU</td><td>Music Education</td><td align=right>4</td></tr>
+<tr>
+<td>MUS PERF</td><td>Music Performance</td><td align=right>8</td></tr>
+<tr>
+<td>MUS THPY</td><td>Music Therapy</td><td align=right>13</td></tr>
+<tr>
+<td>MUS-BA</td><td>Music</td><td align=right>3</td></tr>
+<tr>
+<td>MUSPB THPY</td><td>Music Therapy</td><td align=right>1</td></tr>
+<tr>
+<td>MUSTH-HNSC</td><td>Music Therapy</td><td align=right>2</td></tr>
+<tr>
+<td>PHE</td><td>Philosophy - Ethics Track</td><td align=right>4</td></tr>
+<tr>
+<td>PHL</td><td>Philosophy</td><td align=right>6</td></tr>
+<tr>
+<td>PMUS</td><td>Pre-Music</td><td align=right>2</td></tr>
+<tr>
+<td>PSC</td><td>Political Science</td><td align=right>30</td></tr>
+<tr>
+<td>PSC-HNSC</td><td>Political Science</td><td align=right>1</td></tr>
+<tr>
+<td>PSCPB</td><td>Political Science</td><td align=right>1</td></tr>
+<tr>
+<td>PSWK</td><td>Pre-Social Work</td><td align=right>36</td></tr>
+<tr>
+<td>PSWKPB</td><td>Pre-Social Work</td><td align=right>1</td></tr>
+<tr>
+<td>REL</td><td>Comparative Religion</td><td align=right>2</td></tr>
+<tr>
+<td>SOC</td><td>Sociology</td><td align=right>37</td></tr>
+<tr>
+<td>SOCCCC</td><td>Sociology</td><td align=right>1</td></tr>
+<tr>
+<td>SPN</td><td>Spanish</td><td align=right>18</td></tr>
+<tr>
+<td>SPN-HNSC</td><td>Spanish</td><td align=right>1</td></tr>
+<tr>
+<td>SPNLR</td><td>Spanish</td><td align=right>1</td></tr>
+<tr>
+<td>SPNPB</td><td>Spanish</td><td align=right>5</td></tr>
+<tr>
+<td>SSC</td><td>Social Science</td><td align=right>1</td></tr>
+<tr>
+<td>SST</td><td>Social Studies</td><td align=right>9</td></tr>
+<tr>
+<td>SSTIGL</td><td>Social Studies - Integrated SS</td><td align=right>1</td></tr>
+<tr>
+<td>SSTPB</td><td>Social Studies</td><td align=right>1</td></tr>
+<tr>
+<td>SWK</td><td>Social Work</td><td align=right>81</td></tr>
+<tr>
+<td>SWK-HNSC</td><td>Social Work</td><td align=right>1</td></tr>
+<tr>
+<td>SWKCCC</td><td>Social Work</td><td align=right>2</td></tr>
+<tr>
+<td>UNDCA</td><td>Lib Arts & Soc Sci</td><td align=right>6</td></tr>
+<tr>
+<td>WRITING</td><td>Prof. Writing Certificate</td><td align=right>1</td></tr>
+<tr>
+<td>WST-BA</td><td>Women's Studies</td><td align=right>5</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 784</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Science&Hlth Prfsns')"> <div class="head1">College of Science&Hlth Prfsns</div></a><div id="College of Science&Hlth Prfsns" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>APSTAT</td><td>Applied Statistics</td><td align=right>4</td></tr>
+<tr>
+<td>CBC</td><td>Clinical Bioanalytical Chem</td><td align=right>7</td></tr>
+<tr>
+<td>DBI</td><td>Regulatory Biology</td><td align=right>13</td></tr>
+<tr>
+<td>DIVMGT</td><td>Diversity Management</td><td align=right>2</td></tr>
+<tr>
+<td>DPT</td><td>Doctor of Physical Therapy</td><td align=right>108</td></tr>
+<tr>
+<td>GBI</td><td>Biology</td><td align=right>11</td></tr>
+<tr>
+<td>GCH</td><td>Chemistry</td><td align=right>6</td></tr>
+<tr>
+<td>GCSND</td><td>Grad Coll of Science Non-degre</td><td align=right>38</td></tr>
+<tr>
+<td>GEV</td><td>Environmental Science</td><td align=right>1</td></tr>
+<tr>
+<td>GHE</td><td>Health Science</td><td align=right>21</td></tr>
+<tr>
+<td>GHE-PA</td><td>Health Science- Phy. A. Track</td><td align=right>61</td></tr>
+<tr>
+<td>GMT</td><td>Mathematics</td><td align=right>4</td></tr>
+<tr>
+<td>GPSYS</td><td>Psychology Specialist</td><td align=right>10</td></tr>
+<tr>
+<td>GPY-CIR</td><td>Psychology-Industrial/Org Rsch</td><td align=right>3</td></tr>
+<tr>
+<td>GPY-CL</td><td>Psychology - Clinical</td><td align=right>1</td></tr>
+<tr>
+<td>GPY-DIV</td><td>Psychology-Diversity Mgmt</td><td align=right>4</td></tr>
+<tr>
+<td>GPY-SCH</td><td>Psychology-School</td><td align=right>2</td></tr>
+<tr>
+<td>GSP</td><td>Speech Pathology and Aud</td><td align=right>32</td></tr>
+<tr>
+<td>MOT</td><td>Master of Occupational Therapy</td><td align=right>89</td></tr>
+<tr>
+<td>MPH-CEO</td><td>Master of Public Health</td><td align=right>12</td></tr>
+<tr>
+<td>NEOMEDG</td><td>NEOMED Partnership</td><td align=right>1</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 430</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>AHSCBS</td><td>Health Sciences</td><td align=right>1</td></tr>
+<tr>
+<td>BIO</td><td>Biology</td><td align=right>125</td></tr>
+<tr>
+<td>BIO-HNSC</td><td>Biology</td><td align=right>8</td></tr>
+<tr>
+<td>BIOIGL</td><td>Biology - Integrated Science</td><td align=right>4</td></tr>
+<tr>
+<td>BIOPB</td><td>Biology</td><td align=right>5</td></tr>
+<tr>
+<td>BIT</td><td>Biology-Medical Technology</td><td align=right>20</td></tr>
+<tr>
+<td>BITPB</td><td>Biology-Medical Technology</td><td align=right>1</td></tr>
+<tr>
+<td>CHM</td><td>Chemistry</td><td align=right>17</td></tr>
+<tr>
+<td>CHM-HNSC</td><td>Chemistry</td><td align=right>1</td></tr>
+<tr>
+<td>CHMIGL</td><td>Chemistry - Integrated Science</td><td align=right>2</td></tr>
+<tr>
+<td>CHMPP</td><td>Chemistry</td><td align=right>12</td></tr>
+<tr>
+<td>CHMPPCCC</td><td>Chemistry</td><td align=right>1</td></tr>
+<tr>
+<td>CSPBUND</td><td>Science Undecided</td><td align=right>1</td></tr>
+<tr>
+<td>EDI-CS</td><td>Education</td><td align=right>18</td></tr>
+<tr>
+<td>EVSAS</td><td>Environmental Sciences</td><td align=right>24</td></tr>
+<tr>
+<td>EVSAS-HNSC</td><td>Environmental Sciences</td><td align=right>1</td></tr>
+<tr>
+<td>EVSASCCC</td><td>Environmental Sciences</td><td align=right>1</td></tr>
+<tr>
+<td>EVSASPB</td><td>Environmental Sciences</td><td align=right>1</td></tr>
+<tr>
+<td>GEO</td><td>Geological Sciences</td><td align=right>1</td></tr>
+<tr>
+<td>HSBAC</td><td>Health Science Comp Prog</td><td align=right>2</td></tr>
+<tr>
+<td>HSCBS</td><td>Health Sciences</td><td align=right>133</td></tr>
+<tr>
+<td>HSCBS-HNSC</td><td>Health Sciences</td><td align=right>6</td></tr>
+<tr>
+<td>HSCBS-PB</td><td>Health Sciences</td><td align=right>32</td></tr>
+<tr>
+<td>HSCBSCCC</td><td>Health Sciences</td><td align=right>4</td></tr>
+<tr>
+<td>HSPHA</td><td>Health Science Pre-Phys Asst</td><td align=right>51</td></tr>
+<tr>
+<td>HSPHA-CCC</td><td>Health Science Pre-Phys Asst</td><td align=right>2</td></tr>
+<tr>
+<td>HSPHA-HNSC</td><td>Health Science Pre-Phys Asst</td><td align=right>6</td></tr>
+<tr>
+<td>HSPHAPB</td><td>Health Science Pre-Phys Asst</td><td align=right>2</td></tr>
+<tr>
+<td>HSTHO</td><td>Health Science Pre-Occ Thrpy</td><td align=right>43</td></tr>
+<tr>
+<td>HSTHOPB</td><td>Health Science Pre-Occ Thrpy</td><td align=right>3</td></tr>
+<tr>
+<td>HSTHP</td><td>Health Science Pre-Phys Thrpy</td><td align=right>36</td></tr>
+<tr>
+<td>HSTHP-HNSC</td><td>Health Science Pre-Phys Thrpy</td><td align=right>2</td></tr>
+<tr>
+<td>HSTHP-PB</td><td>Health Science Pre-Phys Thrpy</td><td align=right>13</td></tr>
+<tr>
+<td>HSTHPCCC</td><td>Health Sciences-Physical Thpy</td><td align=right>1</td></tr>
+<tr>
+<td>MTH</td><td>Mathematics</td><td align=right>10</td></tr>
+<tr>
+<td>MTH-HNSC</td><td>Mathematics</td><td align=right>2</td></tr>
+<tr>
+<td>MTHIGL</td><td>Mathematics - Integrated Math</td><td align=right>2</td></tr>
+<tr>
+<td>MTHPB</td><td>Mathematics</td><td align=right>1</td></tr>
+<tr>
+<td>MTS</td><td>Mathematics</td><td align=right>14</td></tr>
+<tr>
+<td>MTSCCC</td><td>Mathematics</td><td align=right>2</td></tr>
+<tr>
+<td>MTSIGL</td><td>Mathematics - Integrated Math</td><td align=right>2</td></tr>
+<tr>
+<td>MTSPB</td><td>Mathematics</td><td align=right>1</td></tr>
+<tr>
+<td>NEOMED</td><td>NEOMED Partnership</td><td align=right>26</td></tr>
+<tr>
+<td>PHMAD-HNSC</td><td>Pharmaceutical Sci Admin Track</td><td align=right>1</td></tr>
+<tr>
+<td>PHMSC-HNSC</td><td>Pharmaceutical Science</td><td align=right>2</td></tr>
+<tr>
+<td>PHMSCI</td><td>Pharmaceutical Science</td><td align=right>11</td></tr>
+<tr>
+<td>PHMSCIPB</td><td>Pharmaceutical Science</td><td align=right>2</td></tr>
+<tr>
+<td>PHS</td><td>Physics</td><td align=right>6</td></tr>
+<tr>
+<td>PHY</td><td>Physics</td><td align=right>2</td></tr>
+<tr>
+<td>PREDENT</td><td>Pre-Dentistry</td><td align=right>9</td></tr>
+<tr>
+<td>PREDENTPB</td><td>Pre-Dentistry</td><td align=right>5</td></tr>
+<tr>
+<td>PREMED</td><td>Pre-Medicine</td><td align=right>96</td></tr>
+<tr>
+<td>PREMEDCCC</td><td>Pre-Medicine</td><td align=right>1</td></tr>
+<tr>
+<td>PREMEDPB</td><td>Pre-Medicine</td><td align=right>36</td></tr>
+<tr>
+<td>PREMEDU</td><td>Pre-Medicine (Undecided)</td><td align=right>7</td></tr>
+<tr>
+<td>PREPHAR</td><td>Pre-Pharmacy</td><td align=right>17</td></tr>
+<tr>
+<td>PREPHARCCC</td><td>Pre-Pharmacy</td><td align=right>1</td></tr>
+<tr>
+<td>PREPHARPB</td><td>Pre-Pharmacy</td><td align=right>2</td></tr>
+<tr>
+<td>PREPHARU</td><td>Pre-Pharmacy (Undecided)</td><td align=right>3</td></tr>
+<tr>
+<td>PRETHO</td><td>Pre-HealthScience/OccThpyPrep</td><td align=right>9</td></tr>
+<tr>
+<td>PRETHP</td><td>Pre-HealthScience/PhysThpyPrep</td><td align=right>8</td></tr>
+<tr>
+<td>PREVET</td><td>Pre-Veterinary Medicine</td><td align=right>9</td></tr>
+<tr>
+<td>PSY</td><td>Psychology</td><td align=right>165</td></tr>
+<tr>
+<td>PSY-HNSC</td><td>Psychology</td><td align=right>3</td></tr>
+<tr>
+<td>PSYCCC</td><td>Psychology</td><td align=right>6</td></tr>
+<tr>
+<td>PSYLK</td><td>Psychology</td><td align=right>9</td></tr>
+<tr>
+<td>PSYLR</td><td>Psychology</td><td align=right>32</td></tr>
+<tr>
+<td>PSYPB</td><td>Psychology</td><td align=right>4</td></tr>
+<tr>
+<td>SPH</td><td>Speech & Hearing</td><td align=right>30</td></tr>
+<tr>
+<td>SPH-HNSC</td><td>Speech & Hearing</td><td align=right>1</td></tr>
+<tr>
+<td>SPHCCC</td><td>Speech & Hearing</td><td align=right>1</td></tr>
+<tr>
+<td>SPHPB</td><td>Speech & Hearing</td><td align=right>4</td></tr>
+<tr>
+<td>UNDCS</td><td>Science Undecided</td><td align=right>1</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 1123</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('College of Urban Affairs')"> <div class="head1">College of Urban Affairs</div></a><div id="College of Urban Affairs" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>AMPA</td><td>Public Admin Accel 4+1</td><td align=right>1</td></tr>
+<tr>
+<td>GEI</td><td>Environmental Studies M.A.</td><td align=right>2</td></tr>
+<tr>
+<td>GURND</td><td>Graduate Urban Affairs</td><td align=right>16</td></tr>
+<tr>
+<td>JDMES</td><td>Environmental Studies and Law</td><td align=right>1</td></tr>
+<tr>
+<td>JDMPA</td><td>Master of Public Administratio</td><td align=right>2</td></tr>
+<tr>
+<td>JDMUPD</td><td>Urban Planning & Law</td><td align=right>3</td></tr>
+<tr>
+<td>LUMC</td><td>Local Urban Management Cert</td><td align=right>1</td></tr>
+<tr>
+<td>MPA</td><td>Public Administration</td><td align=right>27</td></tr>
+<tr>
+<td>MPA-HCA</td><td>Health Care Administration</td><td align=right>1</td></tr>
+<tr>
+<td>NAL</td><td>Nonprofit Admin & Leadership</td><td align=right>8</td></tr>
+<tr>
+<td>NPM</td><td>Non-Profit Management</td><td align=right>1</td></tr>
+<tr>
+<td>UPD</td><td>Urban Planning & Development</td><td align=right>16</td></tr>
+<tr>
+<td>USD</td><td>Urban Studies & Public Affairs</td><td align=right>7</td></tr>
+<tr>
+<td>USG</td><td>Urban Studies</td><td align=right>3</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 89</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>ANAD</td><td>NonProfit Administration</td><td align=right>1</td></tr>
+<tr>
+<td>AUST</td><td>Urban Studies</td><td align=right>1</td></tr>
+<tr>
+<td>EDV</td><td>Economic Development</td><td align=right>7</td></tr>
+<tr>
+<td>EDVPB</td><td>Economic Development</td><td align=right>1</td></tr>
+<tr>
+<td>EVA</td><td>Environmental Studies</td><td align=right>7</td></tr>
+<tr>
+<td>EVACCC</td><td>Environmental Studies</td><td align=right>1</td></tr>
+<tr>
+<td>NAD</td><td>NonProfit Administration</td><td align=right>21</td></tr>
+<tr>
+<td>NAD-HNSC</td><td>NonProfit Administration</td><td align=right>2</td></tr>
+<tr>
+<td>NADCCC</td><td>NonProfit Administration</td><td align=right>2</td></tr>
+<tr>
+<td>NADLR</td><td>NonProfit Administration</td><td align=right>1</td></tr>
+<tr>
+<td>ORL</td><td>Organizational Leadership</td><td align=right>9</td></tr>
+<tr>
+<td>ORL COM</td><td>Organizational Leadership Com</td><td align=right>4</td></tr>
+<tr>
+<td>ORL MGMT</td><td>Organizational Leadership Mgmt</td><td align=right>21</td></tr>
+<tr>
+<td>ORL MGMTLK</td><td>Organizational Leadership Mgmt</td><td align=right>9</td></tr>
+<tr>
+<td>ORL-LK</td><td>Organizational Leadership</td><td align=right>5</td></tr>
+<tr>
+<td>ORL-OL</td><td>Organizational Leadership-Mobl</td><td align=right>1</td></tr>
+<tr>
+<td>ORLMGMT-OL</td><td>Organizational Ldshp Mgmt-Mobl</td><td align=right>5</td></tr>
+<tr>
+<td>ORLPB</td><td>Organizational Leadership</td><td align=right>1</td></tr>
+<tr>
+<td>PSM</td><td>Public Safety Management</td><td align=right>15</td></tr>
+<tr>
+<td>PSMLK</td><td>Public Safety Management</td><td align=right>2</td></tr>
+<tr>
+<td>PSMLR</td><td>Public Safety Management</td><td align=right>4</td></tr>
+<tr>
+<td>PSMPB</td><td>Public Safety Management</td><td align=right>2</td></tr>
+<tr>
+<td>UNDU</td><td>Urban Affairs Undecided</td><td align=right>1</td></tr>
+<tr>
+<td>UST</td><td>Urban Studies - Public Mgmt</td><td align=right>13</td></tr>
+<tr>
+<td>USTCCC</td><td>Urban Studies - Public Mgmt</td><td align=right>1</td></tr>
+<tr>
+<td>USTENV</td><td>Urban Studies - Env Pol & Mgmt</td><td align=right>3</td></tr>
+<tr>
+<td>USTGIS</td><td>Urban Studies - Geo Info Systs</td><td align=right>2</td></tr>
+<tr>
+<td>USTLK</td><td>Urban Studies - Public Mgmt</td><td align=right>2</td></tr>
+<tr>
+<td>USTLR</td><td>Urban Studies - Public Mgmt</td><td align=right>5</td></tr>
+<tr>
+<td>USTPB</td><td>Urban Studies - Public Mgmt</td><td align=right>1</td></tr>
+<tr>
+<td>USTRPL</td><td>Urban Studies - Regional Plng</td><td align=right>9</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 159</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('CSU')"> <div class="head1">CSU</div></a><div id="CSU" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>ESL</td><td>ESL Intensive Language Program</td><td align=right>25</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 25</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('Nondegree Undergraduate')"> <div class="head1">Nondegree Undergraduate</div></a><div id="Nondegree Undergraduate" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>NDPB</td><td>Nondegree Post-baccalaureate</td><td align=right>1</td></tr>
+<tr>
+<td>NONDEGREE</td><td>Nondegree Undergraduate</td><td align=right>97</td></tr>
+<tr>
+<td>UTRN</td><td>Ugrd Transient</td><td align=right>351</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 449</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('School of Nursing')"> <div class="head1">School of Nursing</div></a><div id="School of Nursing" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Graduate</div></th></tr><tr>
+<td>GNR</td><td>Nursing</td><td align=right>28</td></tr>
+<tr>
+<td>GNRND</td><td>Graduate Nursing Nondegree</td><td align=right>2</td></tr>
+<tr>
+<td>MSNMBA</td><td>MS Nursing & MBA Joint Degree</td><td align=right>3</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Graduate students (double majors included) = 33</div></td></tr></tfoot>
+</tbody></table><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>NUB</td><td>Nursing, BSN/RN</td><td align=right>16</td></tr>
+<tr>
+<td>NUB-HNSC</td><td>Nursing, BSN/RN</td><td align=right>2</td></tr>
+<tr>
+<td>NUBAPB</td><td>Nursing, BSN</td><td align=right>73</td></tr>
+<tr>
+<td>NUR</td><td>Nursing, BSN</td><td align=right>20</td></tr>
+<tr>
+<td>NURPB</td><td>Nursing, BSN</td><td align=right>15</td></tr>
+<tr>
+<td>PNURPB</td><td>Preparatory Nursing</td><td align=right>9</td></tr>
+<tr>
+<td>PSNUR</td><td>Preparatory Nursing</td><td align=right>23</td></tr>
+<tfoot><tr><td colspan=4><div class='head2'>Total Undergraduate students (double majors included) = 158</div></td></tr></tfoot>
+</tbody></table></div><br/><a href="javascript:show('University Studies')"> <div class="head1">University Studies</div></a><div id="University Studies" style="display:none;"><table align="center" id="data" style="width:50%;" class="data nosort"> <thead><tr><th><b>Acad Plan Code</th><th><b>Academic Plan</th><th><b>Current Headcount</th></tr></thead><tbody><tr> <th colspan=5><div class='head2'>Academic Level: Undergraduate</div></th></tr><tr>
+<td>PAVB</td><td>Pre-Admission Viking Boot Camp</td><td align=right>77</td></tr>
+<tr>
+<td>PBUSUS</td><td>Pre-Business Administration</td><td align=right>2</td></tr>
+<tr>
+<td>PEDUS</td><td>Pre-Educ & Human Serv (Educ)</td><td align=right>1</td></tr>
+<tr>
+<td>PENGUS</td><td>Pre-College of Engineering</td><td align=right>3</td></tr>
+<tr>
+<td>PLASS</td><td>Pre-Liberal Arts & Social Sci</td><td align=right>8</td></tr>
+<tr>
+<td>PNURS</td><td>Exploratory Nursing</td><td align=right>4</td></tr>
+<tr>
+<td>PSCI</td><td>Pre-Science</td><td align=right>4</td></tr>
+<tr>
+<td>PSEOP</td><td>College Credit Plus</td><td align=right>35</td></tr>
+<tr>
+<td>TRSBU</td><td>Transitional Business</td><td align=right>2</td></tr>
+<tr>
+<td>TRSCA</td><td>Transitional Lib Arts/Soc Sci</td><td align=right>3</td></tr>
+<tr>
+<td>TRSCS</td><td>Transitional Science</td><td align=right>2</td></tr>
+<tr>
+<td>TRSED</td><td>Transitional Education</td><td align=right>1</td></tr>
+<tr>
+<td>TRSEN</td><td>Transitional Engineering</td><td align=right>7</td></tr>
+<tr>
+<td>TRSSN</td><td>Transitional Nursing</td><td align=right>17</td></tr>
+<tr>
+<td>TRSUR</td><td>Transitional Urban</td><td align=right>5</td></tr>
+<tr>
+<td>TRSXP</td><td>Transitional Exploratory</td><td align=right>34</td></tr>
+<tr>
+<td>UNDUS</td><td>University Studies Undecided</td><td align=right>3</td></tr>
+<tr>
+<td>USP60</td><td>Project 60</td><td align=right>65</td></tr>
+
+</tbody></table></div>

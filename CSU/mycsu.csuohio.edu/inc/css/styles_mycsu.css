@@ -1,0 +1,228 @@
+
+/* ****************** STYLES USED ON myCSU PAGES ONLY *********************** */
+.container{
+	min-width:954px;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	margin:20px;}
+	
+.mycsu .container{
+	width:953px;
+	margin:20px auto;}
+	
+.nav{
+	width:953px;
+	height:65px;
+	margin:0 6px 6px 0;}
+	
+.navSub{
+	height:65px;
+	margin:0 0 6px 0;
+	background:#186542 url(../../graphics/mycsu/nav_bkg.gif) repeat-x;}
+	
+.nav_left{
+	width:486px;
+	height:65px;
+	float:left;}
+		
+.nav_right{
+	width:468px;
+	height:65px;
+	float:right;
+	text-align:right;}
+
+	.search_area{
+		float:left;
+		background-image:url(../../graphics/mycsu/nav_search.gif);
+		background-repeat:no-repeat;
+		width:178px;
+		height:65px;}
+	
+		.search_field{
+			float:left;
+			border:none!important;
+			border-width:0;
+			margin:13px 10px 0 15px;
+			width:145px;
+			height:35px;
+			background:none;
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:11px;
+			color:#a8aeb4;}
+
+.nav_rightright{
+	width:242px;
+	background-color:#eeefc5;
+	float:left;}
+* html .nav_rightright{padding:0 0 0 6px;width:236px;}
+			
+	.nav_rightside{
+		margin:0 0 6px 6px;
+		width:235px;
+		height:65px;
+		line-height:0px;
+		float:left;}
+	
+		.nav_csuhome{
+			background:#e60 url(../../graphics/global/nav_csuhome.gif) no-repeat;
+			width:116px;
+			height:34px;
+			display:block;
+			float:left;}
+		
+		.nav_csuhome:hover{
+			background:#dd3f00 url(../../graphics/global/nav_csuhome_o.gif) no-repeat;
+			width:116px;
+			height:34px;
+			display:block;
+			float:left;}
+			
+		.nav_logout{
+			margin-left:3px;
+			background:#e60 url(../../graphics/mycsu/nav_logout.gif) no-repeat;
+			width:116px;
+			height:34px;
+			display:block;
+			float:left;}
+		
+		.nav_logout:hover{
+			margin-left:3px;
+			background:#dd3f00 url(../../graphics/mycsu/nav_logout_o.gif) no-repeat;
+			width:116px;
+			height:34px;
+			display:block;
+			float:left;}
+
+h2 {border-bottom:1px #ebefca solid;}
+
+/* ************** URGENT MESSAGE ******************** */
+
+.urgent{
+	width:953px;
+	margin:0 0 6px 0;}
+
+.urgent_content{
+	width:848px;}
+
+/* ************** COLUMNS and AREAS ******************** */
+	
+.mycsu .left_side{
+	width:471px;
+	margin:0 6px 0 0;
+	float:left;
+	background:none;}
+
+.right_side_col3{
+	width:235px;
+	height:727px;
+	margin:0 6px 0 0;
+	background:#89b25e url(../../graphics/mycsu/col_foot3.gif) no-repeat bottom;
+	float:left;}
+
+.right_side_col4{
+	width:235px;
+	height:727px;
+	background:#6294dd url(../../graphics/mycsu/col_foot2.gif) no-repeat bottom;
+	float:left;}
+
+.left_mid{
+	width:471px;
+	margin:0 0 6px 0;}
+
+.left_bottom{
+	position:relative;
+	width:471px;}
+	
+.bottom_left_col{
+	width:233px;
+	margin:0 5px 0 0;
+	float:left;}
+
+.bottom_left_ad{
+	width:233px;
+	height:125px;
+	margin:4px 0 0 0;}
+
+.bottom_right_col{
+	width:233px;
+	float:left;}
+	
+.bottom_right_ad{
+	width:233px;
+	height:125px;
+	margin:4px 0 0 0;}
+	
+/* ************** AJAX CONTENT ******************** */
+	
+.slider_right{
+	width:142px;
+	margin:0 0 5px 0;
+	line-height:1.2em;
+	float:left;}
+	
+.slider_right a{
+	line-height:1.25em;}
+
+.slider_left{
+	width:66px;
+	margin:0 0 5px 0;
+	float:left;}
+
+.slider_center{
+	width:210px;
+	text-align:center;}
+
+#first .slider_section, 
+#second .slider_section {
+	width:210px;}
+
+#third .slider_section, 
+#fourth .slider_section {
+	width:205px;}
+	
+.slider_section{
+	margin:0 0 3px 0;}
+	
+.login{
+	font-weight:bold;
+	text-align:center;}
+
+.login a{
+	font-weight:normal;}
+
+.btn_login {
+	margin:5px 0;
+	width:80px;
+	height:22px;}
+
+.login_field{
+	margin:1px 0 2px 0;}
+	
+/* ************** LOGIN POPUP ******************** */
+
+.containerLogin {
+	width:600px;
+	margin:32px auto;}
+.login_inner {
+	height:345px;
+	text-align:center;
+	background:#196443 url(../../graphics/mycsu/bkg_login.jpg) no-repeat;}
+.loginTbl {
+	font-size:11px;
+	font-family:Arial, Helvetica, Verdana, sans-serif;
+	padding:0;
+	border:0;
+	margin:120px auto 0 auto;}
+	.loginTbl th {
+		text-align:right;
+		vertical-align:middle;
+		color:#fff;
+		font-weight:bold;}
+	.loginTbl td {
+		text-align:left;
+		vertical-align:middle;
+		color:#fff;
+		font-weight:bold;
+		height:30px;
+		padding:0 5px;}
+		.loginTbl td a {color:#fff;}
+.containerLogin .footer {}
